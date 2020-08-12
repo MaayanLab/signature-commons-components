@@ -1,6 +1,6 @@
-# signature-commons-components
+# DataTable
 
-Components for signature commons
+DataTable Components for signature commons
 
 ## Development
 
@@ -45,7 +45,7 @@ npm install --save <github-or-directory-of-this-project>
 
 Use it similarly to how it is used in `public/demo.js`
 ```jsx
-import DataTable from 'signature_commons_components'
+import {DataTable} from '@maayanlab/data-table'
 
 // ...
 (

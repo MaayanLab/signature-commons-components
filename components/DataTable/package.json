@@ -1,7 +1,7 @@
 {
-  "name": "signature_commons_components",
+  "name": "@maayanlab/data-table",
   "version": "0.1.0",
-  "description": "Components for signature commons",
+  "description": "Data Table Components for signature commons",
   "source": "src/index.js",
   "main": "dist/index.js",
   "scripts": {
