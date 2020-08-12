@@ -1,0 +1,32 @@
+{
+  "name": "signature_commons_components",
+  "version": "0.1.0",
+  "description": "Components for signature commons",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "parcel serve public/index.html -d build",
+    "build": "microbundle --jsx React.createElement --globals react=React"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/plugin-transform-runtime": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "microbundle": "^0.12.3",
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0"
+  },
+  "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "@mdi/font": "^5.4.55",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "regenerator-runtime": "^0.13.7"
+  },
+  "author": "John Erol Evangelista <JohnErol.Evangelista@mssm.edu>",
+  "license": "Apache-2.0"
+}
