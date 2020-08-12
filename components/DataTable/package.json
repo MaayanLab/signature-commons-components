@@ -27,6 +27,14 @@
     "react": "^16.8.6",
     "regenerator-runtime": "^0.13.7"
   },
+  "repository": {
+    "type" : "git",
+    "url": "ssh://git@github.com:MaayanLab/signature-commons-components.git",
+    "directory": "components/DataTable"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  },
   "author": "John Erol Evangelista <JohnErol.Evangelista@mssm.edu>",
   "license": "Apache-2.0"
 }
