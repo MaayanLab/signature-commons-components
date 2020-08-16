@@ -1,6 +1,6 @@
 {
   "name": "@maayanlab/data-table",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Data Table Components for signature commons",
   "source": "src/index.js",
   "main": "dist/index.js",
@@ -8,9 +8,11 @@
     "dev": "parcel serve public/index.html -d build",
     "build": "microbundle --jsx React.createElement --globals react=React"
   },
+  "browserslist": [
+    "since 2017-06"
+  ],
   "devDependencies": {
     "@babel/core": "^7.11.1",
-    "@babel/plugin-transform-runtime": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
     "microbundle": "^0.12.3",
     "parcel-bundler": "^1.12.4",
@@ -24,16 +26,15 @@
     "@material-ui/core": "^3.9.2",
     "@mdi/font": "^5.4.55",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "regenerator-runtime": "^0.13.7"
+    "react": "^16.8.6"
   },
   "repository": {
-    "type" : "git",
+    "type": "git",
     "url": "ssh://git@github.com:MaayanLab/signature-commons-components.git",
     "directory": "components/DataTable"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/"
   },
   "author": "John Erol Evangelista <JohnErol.Evangelista@mssm.edu>",
   "license": "Apache-2.0"
