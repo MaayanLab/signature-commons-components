@@ -149,9 +149,11 @@ export const InfoCard = ({
                     </Grid>
                     {Object.entries(info.keywords).map(([label, value]) =>(
                       <Grid item xs={12} key={value.label}>
-                        <Typography variant="caption">
-                          {value.label}: 
-                        </Typography>
+                        <div>
+                          <Typography variant="caption">
+                            {value.label}: 
+                          </Typography>
+                        </div>
                         {value.value.map(v=>(
                           <Tooltip title={v}
                             key={v}
