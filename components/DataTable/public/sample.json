@@ -48,7 +48,7 @@
       },
       "info": {
         "id": "5f2311ae-c1a1-11e8-b838-0242ac170004",
-        "display": {},
+        "display": {"PMID": {"text":"32935832","hyperlink":"https://www.ncbi.nlm.nih.gov/pubmed/32935832","label":"PMID"}},
         "icon": {
           "label": "Image",
           "alt": "PPI Hub Proteins",

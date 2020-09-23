@@ -95,28 +95,30 @@ export const InfoCard = ({
                         />
                       </Grid>
                     }
-                    {Object.entries(info.display).map(([label, value]) => {
-                      <Highlight
-                        Component={(props) => {
-                          if (value.hyperlink !== undefined) {
-                            return (
-                              <Typography variant="caption" {...props}>
-                                {value.label}: <a href={value.hyperlink} target="_blank" rel="noopener noreferrer">{value.text}</a>
-                              </Typography>
-                            )
-                          } else {
-                            return (
-                              <Typography variant="caption" {...props}>
-                                {value.label}: {value.text}
-                              </Typography>
-                            )
-                          }
-                        }}
-                        text={info.subtitle.text}
-                        highlight={highlight}
-                        {...displayProps}
-                      />
-                    })}
+                    {Object.entries(info.display).map(([label, value]) => 
+                      <Grid item xs={12}>
+                        <Highlight
+                          Component={(props) => {
+                            if (value.hyperlink !== undefined) {
+                              return (
+                                <Typography variant="caption" {...props}>
+                                  {value.label}: <a href={value.hyperlink} target="_blank" rel="noopener noreferrer">{value.text}</a>
+                                </Typography>
+                              )
+                            } else {
+                              return (
+                                <Typography variant="caption" {...props}>
+                                  {value.label}: {value.text}
+                                </Typography>
+                              )
+                            }
+                          }}
+                          text={info.subtitle.text}
+                          highlight={highlight}
+                          {...displayProps}
+                        />
+                      </Grid>
+                    )}
                     <Grid item xs={12}>
                     </Grid>
                     <Grid item xs={12}>

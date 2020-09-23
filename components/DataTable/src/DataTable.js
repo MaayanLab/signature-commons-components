@@ -3,44 +3,49 @@ import PropTypes from 'prop-types'
 import Grid from '@material-ui/core/Grid'
 import { InfoCard } from './InfoCard';
 import { Typography } from '@material-ui/core';
+import { useTheme } from '@material-ui/styles'
+import { MuiThemeProvider } from '@material-ui/core'
 
 export const DataTable = (props) => {
     const {TopComponents=[],
         BottomComponents=[],
         InfoCardComponent=InfoCard,
         entries} = props
+    const theme = useTheme()
     return(
-        <Grid container>
-            {TopComponents.map(comp=>{
-                const {component,
-                    GridProps={},
-                    props
-                } = comp
-                return(
-                    <Grid item {...GridProps}>
-                        {component(props)}
-                    </Grid>
-                )
-            })}
-            <Grid item style={{width:"100%"}}>
-                {typeof entries === 'undefined' || entries.length == 0 ?
-                <Typography variant="h5" >No entries</Typography>:
-                entries.map(entry=>(
-                    <InfoCardComponent {...entry}/>
-                ))}
+        <MuiThemeProvider theme={theme}>
+            <Grid container>
+                {TopComponents.map(comp=>{
+                    const {component,
+                        GridProps={},
+                        props
+                    } = comp
+                    return(
+                        <Grid item {...GridProps}>
+                            {component(props)}
+                        </Grid>
+                    )
+                })}
+                <Grid item style={{width:"100%"}}>
+                    {typeof entries === 'undefined' || entries.length == 0 ?
+                    <Typography variant="h5" >No entries</Typography>:
+                    entries.map(entry=>(
+                        <InfoCardComponent {...entry}/>
+                    ))}
+                </Grid>
+                {BottomComponents.map(comp=>{
+                    const {component,
+                        GridProps={},
+                        props
+                    } = comp
+                    return(
+                        <Grid item {...GridProps}>
+                            {component(props)}
+                        </Grid>
+                    )
+                })}
             </Grid>
-            {BottomComponents.map(comp=>{
-                const {component,
-                    GridProps={},
-                    props
-                } = comp
-                return(
-                    <Grid item {...GridProps}>
-                        {component(props)}
-                    </Grid>
-                )
-            })}
-        </Grid> 
+        </MuiThemeProvider> 
     )
 }
 
