@@ -1,364 +1,2220 @@
 [
-    {
-      "data": {
-        "$validator": "/dcic/signature-commons-schema/v5/core/signature.json",
-        "id": "5f2311ae-c1a1-11e8-b838-0242ac170004",
-        "library": {
-          "$validator": "/dcic/signature-commons-schema/v5/core/library.json",
-          "id": "310ddd3d-d3e2-11e8-8664-787b8ad942f3",
-          "resource": "d43a1e3e-a5b8-400d-b2ac-c58abaae493e",
-          "dataset": "enrichr_geneset",
-          "dataset_type": "geneset_library",
-          "meta": {
-            "DOI": "10.1093/bioinformatics/btr625",
-            "Icon": "static/images/PPI_Hub_Proteins.ico",
-            "PMID": "22080467",
-            "Spec": "(?P<Original_String>((?P<UUID>.*):SC=)?(?P<Gene>.+?))\\t\\t(?P<Genes>.+)",
-            "Assay": "literature curation",
-            "Readout": "protein",
-            "Version": "2013",
-            "Filename": "PPI_Hub_Proteins",
-            "Organism": "Mus musculus; Homo sapiens",
-            "Weighted": "False",
-            "$validator": "/@dcic/signature-commons-schema/v4/meta/library/sigcom.json",
-            "Access_URL": "http://amp.pharm.mssm.edu/Enrichr/geneSetLibrary?mode=text&libraryName=PPI_Hub_Proteins",
-            "Description": "Protein-protein interactions for proteins with more than 50 known partners extracted from several literature-based databases.",
-            "Library_name": "PPI Hub Proteins",
-            "Original_source": "MaayanLab",
-            "Link_to_resource": "http://www.maayanlab.net/X2K",
-            "Primary_Resource": "X2K",
-            "Perturbation_Type": "gene",
-            "Library_created_by": "MaayanLab"
-          }
-        },
-        "meta": {
-          "Gene": [
-            {
-              "Name": "STAT3"
-            }
-          ],
-          "Assay": "literature curation",
-          "Readout": "protein",
-          "Organism": "Mus musculus; Homo sapiens",
-          "$validator": "/@dcic/signature-commons-schema/v4/meta/signature/sigcom.json",
-          "Number_of_genes": 192,
-          "Original_String": "STAT3",
-          "Perturbation_Type": "gene"
-        }
-      },
-      "info": {
-        "id": "5f2311ae-c1a1-11e8-b838-0242ac170004",
-        "display": {"PMID": {"text":"32935832","hyperlink":"https://www.ncbi.nlm.nih.gov/pubmed/32935832","label":"PMID"}},
-        "icon": {
-          "label": "Image",
-          "alt": "PPI Hub Proteins",
-          "src": "/static/images/PPI_Hub_Proteins.ico",
-          "text": "PPI Hub Proteins"
-        },
-        "subtitle": {
-          "text": "PPI Hub Proteins",
-          "label": "Library"
-        },
-        "name": {
-          "text": "STAT3",
-          "label": "Description"
-        },
-        "tags": [
+  {
+    "data": {
+      "$validator": "/dcic/signature-commons-schema/v5/core/signature.json",
+      "id": "082dc1e0-6d6d-4a22-b1e5-41dd06a9d1b5",
+      "library": "68ca470b-cd49-49c3-b54a-a2a980361df5",
+      "meta": {
+        "$validator": "https://raw.githubusercontent.com/MaayanLab/BioToolStory/master/validators/btools_tools.json",
+        "Abstract": "One of the main challenges in drug discovery is predicting proteinligand binding affinity. Recently machine learning approaches have made substantial progress on this task. However current methods of model evaluation are overly optimistic in measuring generalization to new targets and there does not exist a standard dataset of sufficient size to compare performance between models. We present a new dataset for structurebased machine learning the CrossDocked2020 set with 22.5 million poses of ligands docked into multiple similar binding pockets across the Protein Data Bank and perform a comprehensive evaluation of gridbased convolutional neural network CNN models on this dataset. We also demonstrate how the partitioning of the training data and test data can impact the results of models trained with the PDBbind dataset how performance improves by adding more lowerquality training data and how training with docked poses imparts pose sensitivity to the predicted affinity of a complex. Our best performing model an ensemble of five densely connected CNNs achieves a root mean squared error of 1.42 and Pearson R of 0.612 on the affinity prediction task an AUC of 0.956 at binding pose classification and a 68.4 accuracy at pose selection on the CrossDocked2020 set. By providing data splits for clustered crossvalidation and the raw data for the CrossDocked2020 set we establish the first standardized dataset for training machine learning models to recognize ligands in noncognate target structures while also greatly expanding the number of poses available for training. In order to facilitate community adoption of this dataset for benchmarking proteinligand binding affinity prediction we provide our models weights and the CrossDocked2020 set at https//github.com/gnina/models.",
+        "Altmetric_Score": 0.25,
+        "Article_Date": "2020-08-31",
+        "Article_Language": [
+          "eng"
+        ],
+        "Article_Title": "3D Convolutional Neural Networks and a CrossDocked Dataset for StructureBased Drug Design.",
+        "Author_Information": [
           {
-            "text": "literature curation",
-            "label": "Assay",
-            "icon": "mdi-flask-outline",
-            "priority": 1,
-            "clickable": true
+            "ForeName": "Paul",
+            "Initials": "P",
+            "LastName": "Francoeur",
+            "Name": "Paul Francoeur"
           },
           {
-            "text": "STAT3",
-            "label": "Gene",
-            "icon": "mdi-dna",
-            "priority": 3,
-            "clickable": true
+            "ForeName": "Tomohide",
+            "Initials": "T",
+            "LastName": "Masuda",
+            "Name": "Tomohide Masuda"
           },
           {
-            "text": "Mus musculus; Homo sapiens",
-            "label": "Organism",
-            "icon": "mdi-human-child",
-            "priority": 5,
-            "clickable": true
+            "ForeName": "Jocelyn",
+            "Initials": "J",
+            "LastName": "Sunseri",
+            "Name": "Jocelyn Sunseri"
+          },
+          {
+            "ForeName": "Andrew",
+            "Initials": "A",
+            "LastName": "Jia",
+            "Name": "Andrew Jia"
+          },
+          {
+            "ForeName": "Richard B",
+            "Initials": "RB",
+            "LastName": "Iovanisci",
+            "Name": "Richard B Iovanisci"
+          },
+          {
+            "ForeName": "Ian",
+            "Initials": "I",
+            "LastName": "Snyder",
+            "Name": "Ian Snyder"
+          },
+          {
+            "ForeName": "David Ryan",
+            "Initials": "DR",
+            "LastName": "Koes",
+            "Name": "David Ryan Koes"
           }
         ],
-        "download": [],
-        "keywords": {}
+        "Citations": 0,
+        "Cited_By_Posts_Count": 1,
+        "DOI": "10.1021/acs.jcim.0c00411",
+        "Electronic_Location_Identifier": "[]",
+        "ISSN": "1549-960X",
+        "Journal": "Journal of Chemical Information & Modeling",
+        "Journal_Title": "Journal of chemical information and modeling",
+        "Last_Author": {
+          "ForeName": "David Ryan",
+          "Initials": "DR",
+          "LastName": "Koes",
+          "Name": "David Ryan Koes"
+        },
+        "PMID": [
+          32865404
+        ],
+        "Publication_Type": [
+          "Journal Article"
+        ],
+        "Readers_Count": 0,
+        "Tool_Description": "3D Convolutional Neural Networks and a CrossDocked Dataset for StructureBased Drug Design",
+        "Tool_Name": "CrossDocked2020",
+        "Topic": [
+          {
+            "LDA_probability": 0.503813725,
+            "Topic": "Protein structure",
+            "Topic_number": "6"
+          },
+          {
+            "LDA_probability": 0.4489400088,
+            "Topic": "Alignment algorithms and methods",
+            "Topic_number": "2"
+          },
+          {
+            "LDA_probability": 0.0236259537,
+            "Topic": "Tools to perform sequence analysis",
+            "Topic_number": "3"
+          },
+          {
+            "LDA_probability": 0.0196500813,
+            "Topic": "Drugs and chemical studies",
+            "Topic_number": "8"
+          },
+          {
+            "LDA_probability": 0.0007943353,
+            "Topic": "Disease study using gene expression",
+            "Topic_number": "5"
+          },
+          {
+            "LDA_probability": 0.0007942443,
+            "Topic": "Brain studies using images",
+            "Topic_number": "9"
+          },
+          {
+            "LDA_probability": 0.0007939148,
+            "Topic": "Biological pathways and interactions",
+            "Topic_number": "7"
+          },
+          {
+            "LDA_probability": 0.0007938722,
+            "Topic": "Sequence-based prediction of DNA and RNA",
+            "Topic_number": "4"
+          },
+          {
+            "LDA_probability": 0.0007938645,
+            "Topic": "Genome sequence databases",
+            "Topic_number": "1"
+          }
+        ],
+        "Year": 2020,
+        "is_tool": 1,
+        "tool_homepage_url": "https://github.com/gnina/models",
+        "url_status": 200
       }
     },
-    {
-      "data": {
-        "$validator": "/dcic/signature-commons-schema/v5/core/signature.json",
-        "id": "080f42ba-c1a1-11e8-8162-0242ac170004",
-        "library": {
-          "$validator": "/dcic/signature-commons-schema/v5/core/library.json",
-          "id": "30a1e23d-d3e2-11e8-ac7c-787b8ad942f3",
-          "resource": "0f2461a4-decf-484d-90d2-d099f07096db",
-          "dataset": "enrichr_geneset",
-          "dataset_type": "geneset_library",
-          "meta": {
-            "Icon": "static/images/BioCarta_2016.ico",
-            "Spec": "(?P<Original_String>((?P<UUID>.*):SC=)?(?P<Pathway>.+?))\\t\\t(?P<Genes>.+)",
-            "Year": "2016",
-            "Assay": "literature curation",
-            "Readout": "protein",
-            "Version": "2016",
-            "Filename": "BioCarta_2016",
-            "Organism": "Homo sapiens",
-            "Weighted": "False",
-            "$validator": "/@dcic/signature-commons-schema/v4/meta/library/sigcom.json",
-            "Access_URL": "http://amp.pharm.mssm.edu/Enrichr/geneSetLibrary?mode=text&libraryName=BioCarta_2016",
-            "Description": "Metabolic pathways from BioCarta.",
-            "Library_name": "BioCarta 2016",
-            "Original_source": "BioCarta",
-            "Link_to_resource": "https://cgap.nci.nih.gov/Pathways/BioCarta_Pathways",
-            "Primary_Resource": "BioCarta",
-            "Perturbation_Type": "pathway",
-            "Library_created_by": "MaayanLab",
-            "Link_to_processing_scripts_on_GitHub": "https://github.com/MaayanLab/harmonizome_processing_scripts/tree/master/biocarta"
-          }
-        },
-        "meta": {
-          "Assay": "literature curation",
-          "Pathway": {
-            "Name": "Stat3 Signaling Pathway Homo sapiens h stat3Pathway"
-          },
-          "Readout": "protein",
-          "Organism": "Homo sapiens",
-          "$validator": "/@dcic/signature-commons-schema/v4/meta/signature/sigcom.json",
-          "Number_of_genes": 8,
-          "Original_String": "Stat3 Signaling Pathway Homo sapiens h stat3Pathway",
-          "Perturbation_Type": "pathway"
+    "info": {
+      "id": "082dc1e0-6d6d-4a22-b1e5-41dd06a9d1b5",
+      "display": {
+        "PMID": {
+          "text": "32865404",
+          "hyperlink": "https://www.ncbi.nlm.nih.gov/pubmed/32865404",
+          "label": "PMID"
         }
       },
-      "info": {
-        "id": "080f42ba-c1a1-11e8-8162-0242ac170004",
-        "display": {},
-        "icon": {
-          "label": "Image",
-          "alt": "BioCarta 2016",
-          "src": "/static/images/BioCarta_2016.ico",
-          "text": "BioCarta 2016"
+      "subtitle": {
+        "text": "3D Convolutional Neural Networks and a CrossDocked Dataset for StructureBased Drug Design",
+        "label": "Description"
+      },
+      "name": {
+        "text": "CrossDocked2020",
+        "label": "Image",
+        "alt": "CrossDocked2020",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "hyperlink": "https://github.com/gnina/models"
+      },
+      "icon": {
+        "label": "Image",
+        "alt": "CrossDocked2020",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "text": "CrossDocked2020",
+        "hyperlink": "https://github.com/gnina/models"
+      },
+      "urlcheck": {
+        "label": "Image",
+        "alt": "CrossDocked2020",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "text": "CrossDocked2020",
+        "hyperlink": "https://github.com/gnina/models"
+      },
+      "scores": {
+        "meta.Citations": {
+          "label": "Citations",
+          "value": "0",
+          "field_name": "meta.Citations",
+          "icon": "mdi-fountain-pen-tip"
+        }
+      },
+      "tags": [
+        {
+          "text": "David Ryan Koes",
+          "label": "Last Author",
+          "icon": "mdi-fountain-pen-tip",
+          "priority": 6
         },
-        "subtitle": {
-          "text": "BioCarta 2016",
-          "label": "Library"
-        },
-        "name": {
-          "text": "Stat3 Signaling Pathway Homo sapiens h stat3Pathway",
-          "label": "Description"
-        },
-        "tags": [
-          {
-            "text": "literature curation",
-            "label": "Assay",
-            "icon": "mdi-flask-outline",
-            "priority": 1,
-            "clickable": true
-          },
-          {
-            "text": "Stat3 Signaling Pathway Homo sapiens h stat3Pathway",
-            "label": "Pathway",
-            "icon": "mdi-webhook",
-            "priority": 3,
-            "clickable": true
-          },
-          {
-            "text": "Homo sapiens",
-            "label": "Organism",
-            "icon": "mdi-human-child",
-            "priority": 5,
-            "clickable": true
-          }
-        ],
-        "download": [],
-        "keywords": {}
-      }
-    },
-    {
-      "data": {
-        "$validator": "/dcic/signature-commons-schema/v5/core/signature.json",
-        "id": "64ce8f78-c1a1-11e8-9c74-0242ac170004",
-        "library": {
-          "$validator": "/dcic/signature-commons-schema/v5/core/library.json",
-          "id": "312576cc-d3e2-11e8-8c2b-787b8ad942f3",
-          "resource": "d43a1e3e-a5b8-400d-b2ac-c58abaae493e",
-          "dataset": "enrichr_geneset",
-          "dataset_type": "geneset_library",
-          "meta": {
-            "DOI": "10.1186/1471-2105-13-156",
-            "Icon": "static/images/Transcription_Factor_PPIs.ico",
-            "PMID": "22748121",
-            "Spec": "(?P<Original_String>((?P<UUID>.*):SC=)?(?P<Gene>.+?))\\t\\t(?P<Genes>.*)",
-            "Assay": "literature curation",
-            "Readout": "protein",
-            "Version": "2015",
-            "Filename": "Transcription_Factor_PPIs",
-            "Organism": "Mus musculus; Homo sapiens",
-            "Weighted": "False",
-            "$validator": "/@dcic/signature-commons-schema/v4/meta/library/sigcom.json",
-            "Access_URL": "http://amp.pharm.mssm.edu/Enrichr/geneSetLibrary?mode=text&libraryName=Transcription_Factor_PPIs",
-            "Description": "A protein-protein interaction (PPI) network was constructed for the project Genes2FANS by consolidating 13 datasets from published results of experimentally-validated interactions. These datasets included: MINT; InnateDB; HPRD; KEGG; IntAct",
-            "Library_name": "Transcription Factor PPIs",
-            "Original_source": "MaayanLab",
-            "Link_to_resource": "http://amp.pharm.mssm.edu/X2K/",
-            "Primary_Resource": "X2K",
-            "Perturbation_Type": "gene",
-            "Library_created_by": "MaayanLab"
-          }
-        },
-        "meta": {
-          "Gene": [
-            {
-              "Name": "STAT3"
-            }
+        {
+          "text": "2020",
+          "label": "Year",
+          "icon": "mdi-calendar-blank",
+          "priority": 6
+        }
+      ],
+      "download": [],
+      "keywords": {
+        "Topic": {
+          "label": "Topic",
+          "value": [
+            "Protein structure: 50.38%",
+            "Alignment algorithms and methods: 44.89%",
+            "Tools to perform sequence analysis: 2.36%",
+            "Drugs and chemical studies: 1.97%",
+            "Disease study using gene expression: 0.08%",
+            "Brain studies using images: 0.08%",
+            "Biological pathways and interactions: 0.08%",
+            "Sequence-based prediction of DNA and RNA: 0.08%",
+            "Genome sequence databases: 0.08%"
           ],
-          "Assay": "literature curation",
-          "Readout": "protein",
-          "Organism": "Mus musculus; Homo sapiens",
-          "$validator": "/@dcic/signature-commons-schema/v4/meta/signature/sigcom.json",
-          "Number_of_genes": 246,
-          "Original_String": "STAT3",
-          "Perturbation_Type": "gene"
+          "icon": "mdi-tag"
         }
-      },
-      "info": {
-        "id": "64ce8f78-c1a1-11e8-9c74-0242ac170004",
-        "display": {},
-        "icon": {
-          "label": "Image",
-          "alt": "Transcription Factor PPIs",
-          "src": "/static/images/Transcription_Factor_PPIs.ico",
-          "text": "Transcription Factor PPIs"
-        },
-        "subtitle": {
-          "text": "Transcription Factor PPIs",
-          "label": "Library"
-        },
-        "name": {
-          "text": "STAT3",
-          "label": "Description"
-        },
-        "tags": [
-          {
-            "text": "literature curation",
-            "label": "Assay",
-            "icon": "mdi-flask-outline",
-            "priority": 1,
-            "clickable": true
-          },
-          {
-            "text": "STAT3",
-            "label": "Gene",
-            "icon": "mdi-dna",
-            "priority": 3,
-            "clickable": true
-          },
-          {
-            "text": "Mus musculus; Homo sapiens",
-            "label": "Organism",
-            "icon": "mdi-human-child",
-            "priority": 5,
-            "clickable": true
-          }
-        ],
-        "download": [],
-        "keywords": {}
-      }
-    },
-    {
-      "data": {
-        "$validator": "/dcic/signature-commons-schema/v5/core/signature.json",
-        "id": "1350f6e6-c1a1-11e8-abf8-0242ac170004",
-        "library": {
-          "$validator": "/dcic/signature-commons-schema/v5/core/library.json",
-          "id": "30bffc21-d3e2-11e8-a078-787b8ad942f3",
-          "resource": "32a36283-4958-4325-9929-446cc2206af7",
-          "dataset": "enrichr_geneset",
-          "dataset_type": "geneset_library",
-          "meta": {
-            "DOI": "10.1186/1471-2105-14-128",
-            "Icon": "static/images/Enrichr_Submissions_TF-Gene_Coocurrence.ico",
-            "PMID": "23586463",
-            "Spec": "(?P<Original_String>((?P<UUID>.*):SC=)?(?P<Gene>.+?))\\t\\t(?P<Genes>.+)",
-            "Assay": "literature curation",
-            "Readout": "gene",
-            "Version": "2018",
-            "Filename": "Enrichr_Submissions_TF-Gene_Coocurrence",
-            "Organism": "Mus musculus; Homo sapiens",
-            "Weighted": "False",
-            "$validator": "/@dcic/signature-commons-schema/v4/meta/library/sigcom.json",
-            "Access_URL": "http://amp.pharm.mssm.edu/Enrichr/geneSetLibrary?mode=text&libraryName=Enrichr_Submissions_TF-Gene_Coocurrence",
-            "Description": "The genes most commonly found in the same user-submitted lists in Enrichr as each transcription factor (TF).",
-            "Library_name": "Enrichr Submissions TF-Gene Coocurrence",
-            "Original_source": "MaayanLab",
-            "Link_to_resource": "http://amp.pharm.mssm.edu/Enrichr/",
-            "Primary_Resource": "ChEA",
-            "Perturbation_Type": "gene",
-            "Library_created_by": "MaayanLab"
-          }
-        },
-        "meta": {
-          "Gene": [
-            {
-              "Name": "STAT3"
-            }
-          ],
-          "Assay": "literature curation",
-          "Readout": "gene",
-          "Organism": "Mus musculus; Homo sapiens",
-          "$validator": "/@dcic/signature-commons-schema/v4/meta/signature/sigcom.json",
-          "Number_of_genes": 299,
-          "Original_String": "STAT3",
-          "Perturbation_Type": "gene"
-        }
-      },
-      "info": {
-        "id": "1350f6e6-c1a1-11e8-abf8-0242ac170004",
-        "display": {},
-        "icon": {
-          "label": "Image",
-          "alt": "Enrichr Submissions TF-Gene Coocurrence",
-          "src": "/static/images/Enrichr_Submissions_TF-Gene_Coocurrence.ico",
-          "text": "Enrichr Submissions TF-Gene Coocurrence"
-        },
-        "subtitle": {
-          "text": "Enrichr Submissions TF-Gene Coocurrence",
-          "label": "Library"
-        },
-        "name": {
-          "text": "STAT3",
-          "label": "Description"
-        },
-        "tags": [
-          {
-            "text": "literature curation",
-            "label": "Assay",
-            "icon": "mdi-flask-outline",
-            "priority": 1,
-            "clickable": true
-          },
-          {
-            "text": "STAT3",
-            "label": "Gene",
-            "icon": "mdi-dna",
-            "priority": 3,
-            "clickable": true
-          },
-          {
-            "text": "Mus musculus; Homo sapiens",
-            "label": "Organism",
-            "icon": "mdi-human-child",
-            "priority": 5,
-            "clickable": true
-          }
-        ],
-        "download": [],
-        "keywords": {}
       }
     }
-  ]
+  },
+  {
+    "data": {
+      "$validator": "/dcic/signature-commons-schema/v5/core/signature.json",
+      "id": "0e7ad245-0ae7-43d7-b80c-7f939d92f4a9",
+      "library": "85d56c8b-1021-4324-ba27-9ac8c932324d",
+      "meta": {
+        "$validator": "https://raw.githubusercontent.com/MaayanLab/BioToolStory/master/validators/btools_tools.json",
+        "Abstract": "CONCUR is a standalone tool for codon usage analysis in ribosome profiling experiments. CONCUR uses the aligned reads in BAM format to estimate codon counts at the ribosome E P and Asites and at flanking positions. CONCUR is written in Perl and is freely available at https//github.com/susbo/concur. Supplementary data are available at Bioinformatics online.",
+        "Altmetric_Score": 0.25,
+        "Article_Date": "2020-08-31",
+        "Article_Language": [
+          "eng"
+        ],
+        "Article_Title": "CONCUR quick and robust calculation of codon usage from ribosome profiling data.",
+        "Author_Information": [
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "German Cancer Research Center (DKFZ), Im Neuenheimer Feld 280, 69120, Heidelberg, Germany."
+              }
+            ],
+            "ForeName": "Michaela",
+            "Initials": "M",
+            "LastName": "Frye",
+            "Name": "Michaela Frye"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "Wellcome - MRC Cambridge Stem Cell Institute, University of Cambridge, Puddicombe Way, Cambridge, CB2 0AW, UK."
+              }
+            ],
+            "ForeName": "Susanne",
+            "Initials": "S",
+            "LastName": "Bornelöv",
+            "Name": "Susanne Bornelöv"
+          }
+        ],
+        "Citations": 0,
+        "Cited_By_Posts_Count": 1,
+        "Country": "Germany",
+        "DOI": "10.1093/bioinformatics/btaa733",
+        "Electronic_Location_Identifier": "[]",
+        "ISSN": "1367-4811",
+        "Institution": "Wellcome - MRC Cambridge Stem Cell Institute, University of Cambridge, Puddicombe Way, Cambridge, CB2 0AW, UK.",
+        "Journal": "Bioinformatics",
+        "Journal_Title": "Bioinformatics (Oxford, England)",
+        "Last_Author": {
+          "ForeName": "Susanne",
+          "Initials": "S",
+          "LastName": "Bornelöv",
+          "Name": "Susanne Bornelöv"
+        },
+        "PMID": [
+          32866237
+        ],
+        "Publication_Type": [
+          "Journal Article"
+        ],
+        "Readers_Count": 0,
+        "Tool_Description": "quick and robust calculation of codon usage from ribosome profiling data.",
+        "Tool_Name": "CONCUR",
+        "Topic": [
+          {
+            "LDA_probability": 0.6302250071,
+            "Topic": "Brain studies using images",
+            "Topic_number": "9"
+          },
+          {
+            "LDA_probability": 0.3419880577,
+            "Topic": "Biological pathways and interactions",
+            "Topic_number": "7"
+          },
+          {
+            "LDA_probability": 0.0039714564,
+            "Topic": "Genome sequence databases",
+            "Topic_number": "1"
+          },
+          {
+            "LDA_probability": 0.0039708216,
+            "Topic": "Protein structure",
+            "Topic_number": "6"
+          },
+          {
+            "LDA_probability": 0.0039692933,
+            "Topic": "Alignment algorithms and methods",
+            "Topic_number": "2"
+          },
+          {
+            "LDA_probability": 0.0039692009,
+            "Topic": "Tools to perform sequence analysis",
+            "Topic_number": "3"
+          },
+          {
+            "LDA_probability": 0.003969084,
+            "Topic": "Disease study using gene expression",
+            "Topic_number": "5"
+          },
+          {
+            "LDA_probability": 0.003968564,
+            "Topic": "Sequence-based prediction of DNA and RNA",
+            "Topic_number": "4"
+          },
+          {
+            "LDA_probability": 0.003968515,
+            "Topic": "Drugs and chemical studies",
+            "Topic_number": "8"
+          }
+        ],
+        "Year": 2020,
+        "is_tool": 1,
+        "tool_homepage_url": "https://github.com/susbo/concur",
+        "url_status": 200
+      }
+    },
+    "info": {
+      "id": "0e7ad245-0ae7-43d7-b80c-7f939d92f4a9",
+      "display": {
+        "PMID": {
+          "text": "32866237",
+          "hyperlink": "https://www.ncbi.nlm.nih.gov/pubmed/32866237",
+          "label": "PMID"
+        }
+      },
+      "subtitle": {
+        "text": "quick and robust calculation of codon usage from ribosome profiling data.",
+        "label": "Description"
+      },
+      "name": {
+        "text": "CONCUR",
+        "label": "Image",
+        "alt": "CONCUR",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "hyperlink": "https://github.com/susbo/concur"
+      },
+      "icon": {
+        "label": "Image",
+        "alt": "CONCUR",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "text": "CONCUR",
+        "hyperlink": "https://github.com/susbo/concur"
+      },
+      "urlcheck": {
+        "label": "Image",
+        "alt": "CONCUR",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "text": "CONCUR",
+        "hyperlink": "https://github.com/susbo/concur"
+      },
+      "scores": {
+        "meta.Citations": {
+          "label": "Citations",
+          "value": "0",
+          "field_name": "meta.Citations",
+          "icon": "mdi-fountain-pen-tip"
+        }
+      },
+      "tags": [
+        {
+          "text": "Susanne Bornelöv",
+          "label": "Last Author",
+          "icon": "mdi-fountain-pen-tip",
+          "priority": 6
+        },
+        {
+          "text": "2020",
+          "label": "Year",
+          "icon": "mdi-calendar-blank",
+          "priority": 6
+        }
+      ],
+      "download": [],
+      "keywords": {
+        "Topic": {
+          "label": "Topic",
+          "value": [
+            "Brain studies using images: 63.02%",
+            "Biological pathways and interactions: 34.20%",
+            "Genome sequence databases: 0.40%",
+            "Protein structure: 0.40%",
+            "Alignment algorithms and methods: 0.40%",
+            "Tools to perform sequence analysis: 0.40%",
+            "Disease study using gene expression: 0.40%",
+            "Sequence-based prediction of DNA and RNA: 0.40%",
+            "Drugs and chemical studies: 0.40%"
+          ],
+          "icon": "mdi-tag"
+        }
+      }
+    }
+  },
+  {
+    "data": {
+      "$validator": "/dcic/signature-commons-schema/v5/core/signature.json",
+      "id": "1be90ac4-a276-45de-bf95-51de37e8908c",
+      "library": "c2e8e8b2-7d70-42fe-9ac9-bdd2f89a1446",
+      "meta": {
+        "$validator": "https://raw.githubusercontent.com/MaayanLab/BioToolStory/master/validators/btools_tools.json",
+        "Abstract": "CancerEnD is an integrated resource developed for annotating 8524 unique expressed enhancers associated genes somatic mutations and copy number variations of 8063 cancer samples from 18 cancer types of TCGA. Somatic mutation data was taken from the COSMIC repository. To delineate the relationship of change in copy number of enhancer elements with the prognosis of cancer patients survival analysis was done using the survival package in R. We identified 1762 overall survival associated enhancers which can be used for prognostic purposes of cancer patients in a tissuespecific manner. CancerEnD https//webs.iiitd.edu.in/raghava/cancerend/ is developed on a userfriendly responsive template that enables searching browsing and downloading of the annotated enhancer elements in terms of gene expression copy number variation and survival association. We hope it provides a promising avenue for researchers to facilitate the understanding of enhancer deregulation in tumorigenesis and to identify new biomarkers for therapy and diseasediagnosis.",
+        "Altmetric_Score": 2.25,
+        "Article_Date": "2020-09-01",
+        "Article_Language": [
+          "eng"
+        ],
+        "Article_Title": "CancerEnD A database of cancer associated enhancers.",
+        "Author_Information": [
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "Bioinformatics Centre, CSIR - Institute of Microbial Technology, Chandigarh, India. Electronic address: b.rajesh@imtech.res.in."
+              }
+            ],
+            "ForeName": "Rajesh",
+            "Initials": "R",
+            "LastName": "Kumar",
+            "Name": "Rajesh Kumar"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "Department of Computational Biology, Indraprastha Institute of Information Technology, New-Delhi, India. Electronic address: anjalil@iiitd.ac.in."
+              }
+            ],
+            "ForeName": "Anjali",
+            "Initials": "A",
+            "LastName": "Lathwal",
+            "Name": "Anjali Lathwal"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "Bioinformatics Centre, CSIR - Institute of Microbial Technology, Chandigarh, India. Electronic address: vinodporiya@imtech.res.in."
+              }
+            ],
+            "ForeName": "Vinod",
+            "Initials": "V",
+            "LastName": "Kumar",
+            "Name": "Vinod Kumar"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "Department of Computational Biology, Indraprastha Institute of Information Technology, New-Delhi, India. Electronic address: sumeetp@iiitd.ac.in."
+              }
+            ],
+            "ForeName": "Sumeet",
+            "Initials": "S",
+            "LastName": "Patiyal",
+            "Name": "Sumeet Patiyal"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "Department of Computational Biology, Indraprastha Institute of Information Technology, New-Delhi, India. Electronic address: pwnrghv@gmail.com."
+              }
+            ],
+            "ForeName": "Pawan Kumar",
+            "Initials": "PK",
+            "LastName": "Raghav",
+            "Name": "Pawan Kumar Raghav"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "Department of Computational Biology, Indraprastha Institute of Information Technology, New-Delhi, India. Electronic address: raghava@iiitd.ac.in."
+              }
+            ],
+            "ForeName": "Gajendra P S",
+            "Initials": "GPS",
+            "LastName": "Raghava",
+            "Name": "Gajendra P S Raghava"
+          }
+        ],
+        "Citations": 0,
+        "Cited_By_Posts_Count": 3,
+        "Country": "India",
+        "DOI": "10.1016/j.ygeno.2020.04.028",
+        "Electronic_Location_Identifier": "[]",
+        "Facebook_Shares": 1,
+        "ISSN": "1089-8646",
+        "Institution": "Department of Computational Biology, Indraprastha Institute of Information Technology, New-Delhi, India. Electronic address: raghava@iiitd.ac.in.",
+        "Journal": "Genomics",
+        "Journal_Title": "Genomics",
+        "KeywordList": [
+          "Cancer",
+          "Copy number variation",
+          "Enhancer",
+          "Expression",
+          "Survival"
+        ],
+        "Last_Author": {
+          "ForeName": "Gajendra P S",
+          "Initials": "GPS",
+          "LastName": "Raghava",
+          "Name": "Gajendra P S Raghava"
+        },
+        "PMID": [
+          32360910
+        ],
+        "Publication_Type": [
+          "Journal Article"
+        ],
+        "Readers_Count": 0,
+        "Tool_Description": "A database of cancer associated enhancers.",
+        "Tool_Name": "CancerEnD",
+        "Topic": [
+          {
+            "LDA_probability": 0.2668545801,
+            "Topic": "Disease study using gene expression",
+            "Topic_number": "5"
+          },
+          {
+            "LDA_probability": 0.2175840815,
+            "Topic": "Sequence-based prediction of DNA and RNA",
+            "Topic_number": "4"
+          },
+          {
+            "LDA_probability": 0.1861609659,
+            "Topic": "Biological pathways and interactions",
+            "Topic_number": "7"
+          },
+          {
+            "LDA_probability": 0.1795939619,
+            "Topic": "Protein structure",
+            "Topic_number": "6"
+          },
+          {
+            "LDA_probability": 0.1057708118,
+            "Topic": "Tools to perform sequence analysis",
+            "Topic_number": "3"
+          },
+          {
+            "LDA_probability": 0.0397038561,
+            "Topic": "Drugs and chemical studies",
+            "Topic_number": "8"
+          },
+          {
+            "LDA_probability": 0.0014444042,
+            "Topic": "Alignment algorithms and methods",
+            "Topic_number": "2"
+          },
+          {
+            "LDA_probability": 0.0014439294,
+            "Topic": "Brain studies using images",
+            "Topic_number": "9"
+          },
+          {
+            "LDA_probability": 0.0014434091,
+            "Topic": "Genome sequence databases",
+            "Topic_number": "1"
+          }
+        ],
+        "Year": 2020,
+        "is_tool": 1,
+        "tool_homepage_url": "https://webs.iiitd.edu.in/raghava/cancerend/",
+        "url_status": "200"
+      }
+    },
+    "info": {
+      "id": "1be90ac4-a276-45de-bf95-51de37e8908c",
+      "display": {
+        "PMID": {
+          "text": "32360910",
+          "hyperlink": "https://www.ncbi.nlm.nih.gov/pubmed/32360910",
+          "label": "PMID"
+        }
+      },
+      "subtitle": {
+        "text": "A database of cancer associated enhancers.",
+        "label": "Description"
+      },
+      "name": {
+        "text": "CancerEnD",
+        "label": "Image",
+        "alt": "CancerEnD",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "hyperlink": "https://webs.iiitd.edu.in/raghava/cancerend/"
+      },
+      "icon": {
+        "label": "Image",
+        "alt": "CancerEnD",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "text": "CancerEnD",
+        "hyperlink": "https://webs.iiitd.edu.in/raghava/cancerend/"
+      },
+      "urlcheck": {
+        "label": "Image",
+        "alt": "CancerEnD",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "text": "CancerEnD",
+        "hyperlink": "https://webs.iiitd.edu.in/raghava/cancerend/"
+      },
+      "scores": {
+        "meta.Citations": {
+          "label": "Citations",
+          "value": "0",
+          "field_name": "meta.Citations",
+          "icon": "mdi-fountain-pen-tip"
+        },
+        "meta.Facebook_Shares": {
+          "label": "Facebook Shares",
+          "value": "1",
+          "field_name": "meta.Facebook_Shares",
+          "icon": "mdi-facebook-box"
+        }
+      },
+      "tags": [
+        {
+          "text": "Gajendra P S Raghava",
+          "label": "Last Author",
+          "icon": "mdi-fountain-pen-tip",
+          "priority": 6
+        },
+        {
+          "text": "2020",
+          "label": "Year",
+          "icon": "mdi-calendar-blank",
+          "priority": 6
+        }
+      ],
+      "download": [],
+      "keywords": {
+        "Keywords": {
+          "label": "Keywords",
+          "value": [
+            "Cancer",
+            "Copy number variation",
+            "Enhancer",
+            "Expression",
+            "Survival"
+          ],
+          "icon": "mdi-tag"
+        },
+        "Topic": {
+          "label": "Topic",
+          "value": [
+            "Disease study using gene expression: 26.69%",
+            "Sequence-based prediction of DNA and RNA: 21.76%",
+            "Biological pathways and interactions: 18.62%",
+            "Protein structure: 17.96%",
+            "Tools to perform sequence analysis: 10.58%",
+            "Drugs and chemical studies: 3.97%",
+            "Alignment algorithms and methods: 0.14%",
+            "Brain studies using images: 0.14%",
+            "Genome sequence databases: 0.14%"
+          ],
+          "icon": "mdi-tag"
+        }
+      }
+    }
+  },
+  {
+    "data": {
+      "$validator": "/dcic/signature-commons-schema/v5/core/signature.json",
+      "id": "1bf485e2-8e04-4384-b18d-9c6cb06bbd6a",
+      "library": "a85209bb-1b50-4308-a709-035f1df41f70",
+      "meta": {
+        "$validator": "https://raw.githubusercontent.com/MaayanLab/BioToolStory/master/validators/btools_tools.json",
+        "Abstract": "Nowadays the manipulation and analysis of genomic data stored in publicly accessible repositories have become a daily task in genomics and bioinformatics laboratories. Due to the enormous advancement in the field of genome sequencing and the emergence of many projects bioinformaticians have pushed for the creation of a variety of programs and pipelines that will automatically analyze such big data in particular the pipelines of gene annotation. Dealing with annotation files using easy and simple programs is very important particularly for nondevelopers enhancing the genomic data analysis acceleration. One of the first tasks required to work with genomic annotation files is to extract different features. In this regard we have developed GAD  https//github.com/bioprojects/GAD  using Python to be a fast easy and controlled script that has a high ability to handle annotation files such as GFF3 and GTF. GAD is a crossplatform graphical interface tool used to extract genome features such as intergenic regions upstream and downstream genes. Besides GAD finds all names of ambiguous sequence ontology and either extracts them or considers them as genes or transcripts. The results are produced in a variety of file formats such as BED GTF GFF3 and FASTA supported by other bioinformatics programs. The GAD can handle large sizes of different genomes and an infinite number of files with minimal user effort. Therefore our script could be integrated into various pipelines in all genomic laboratories to accelerate data analysis.",
+        "Altmetric_Score": 3.6,
+        "Article_Date": "2020-09-01",
+        "Article_Language": [
+          "eng"
+        ],
+        "Article_Title": "GAD A Python Script for Dividing Genome Annotation Files into FeatureBased Files.",
+        "Author_Information": [
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "Agricultural Genetic Engineering Research Institute (AGERI), Agricultural Research Center (ARC), Giza, Egypt."
+              }
+            ],
+            "ForeName": "Norhan",
+            "Initials": "N",
+            "LastName": "Yasser",
+            "Name": "Norhan Yasser"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "Agricultural Genetic Engineering Research Institute (AGERI), Agricultural Research Center (ARC), Giza, Egypt. ahmedkaram.edu@gmail.com."
+              }
+            ],
+            "ForeName": "Ahmed",
+            "Initials": "A",
+            "LastName": "Karam",
+            "Name": "Ahmed Karam"
+          }
+        ],
+        "Citations": 0,
+        "Cited_By_Posts_Count": 6,
+        "Country": "Egypt",
+        "DOI": "10.1007/s12539-020-00378-4",
+        "Electronic_Location_Identifier": "[]",
+        "ISSN": "1867-1462",
+        "Institution": "Agricultural Genetic Engineering Research Institute (AGERI), Agricultural Research Center (ARC), Giza, Egypt. ahmedkaram.edu@gmail.com.",
+        "Journal": "Interdisciplinary Sciences: Computational Life Sciences",
+        "Journal_Title": "Interdisciplinary sciences, computational life sciences",
+        "KeywordList": [
+          "BED",
+          "Extraction",
+          "Features",
+          "GFF3",
+          "GTF",
+          "Genome annotation"
+        ],
+        "Last_Author": {
+          "ForeName": "Ahmed",
+          "Initials": "A",
+          "LastName": "Karam",
+          "Name": "Ahmed Karam"
+        },
+        "PMID": [
+          32524530
+        ],
+        "Publication_Type": [
+          "Journal Article"
+        ],
+        "Readers_Count": 0,
+        "Tool_Description": "A Python Script for Dividing Genome Annotation Files into FeatureBased Files.",
+        "Tool_Name": "GAD",
+        "Topic": [
+          {
+            "LDA_probability": 0.5784914208,
+            "Topic": "Brain studies using images",
+            "Topic_number": "9"
+          },
+          {
+            "LDA_probability": 0.261227124,
+            "Topic": "Disease study using gene expression",
+            "Topic_number": "5"
+          },
+          {
+            "LDA_probability": 0.0747164208,
+            "Topic": "Biological pathways and interactions",
+            "Topic_number": "7"
+          },
+          {
+            "LDA_probability": 0.0550795994,
+            "Topic": "Drugs and chemical studies",
+            "Topic_number": "8"
+          },
+          {
+            "LDA_probability": 0.0267477626,
+            "Topic": "Tools to perform sequence analysis",
+            "Topic_number": "3"
+          },
+          {
+            "LDA_probability": 0.0009354011,
+            "Topic": "Genome sequence databases",
+            "Topic_number": "1"
+          },
+          {
+            "LDA_probability": 0.0009343127,
+            "Topic": "Protein structure",
+            "Topic_number": "6"
+          },
+          {
+            "LDA_probability": 0.0009340659,
+            "Topic": "Alignment algorithms and methods",
+            "Topic_number": "2"
+          },
+          {
+            "LDA_probability": 0.0009338928,
+            "Topic": "Sequence-based prediction of DNA and RNA",
+            "Topic_number": "4"
+          }
+        ],
+        "Year": 2020,
+        "is_tool": 1,
+        "tool_homepage_url": "https://github.com/bioprojects/GAD",
+        "url_status": "404"
+      }
+    },
+    "info": {
+      "id": "1bf485e2-8e04-4384-b18d-9c6cb06bbd6a",
+      "display": {
+        "PMID": {
+          "text": "32524530",
+          "hyperlink": "https://www.ncbi.nlm.nih.gov/pubmed/32524530",
+          "label": "PMID"
+        }
+      },
+      "subtitle": {
+        "text": "A Python Script for Dividing Genome Annotation Files into FeatureBased Files.",
+        "label": "Description"
+      },
+      "name": {
+        "text": "GAD",
+        "label": "Image",
+        "alt": "GAD",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "hyperlink": "https://github.com/bioprojects/GAD"
+      },
+      "icon": {
+        "label": "Image",
+        "alt": "GAD",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "text": "GAD",
+        "hyperlink": "https://github.com/bioprojects/GAD"
+      },
+      "urlcheck": {
+        "label": "Image",
+        "alt": "GAD",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "text": "GAD",
+        "hyperlink": "https://github.com/bioprojects/GAD"
+      },
+      "scores": {
+        "meta.Citations": {
+          "label": "Citations",
+          "value": "0",
+          "field_name": "meta.Citations",
+          "icon": "mdi-fountain-pen-tip"
+        }
+      },
+      "tags": [
+        {
+          "text": "Ahmed Karam",
+          "label": "Last Author",
+          "icon": "mdi-fountain-pen-tip",
+          "priority": 6
+        },
+        {
+          "text": "2020",
+          "label": "Year",
+          "icon": "mdi-calendar-blank",
+          "priority": 6
+        }
+      ],
+      "download": [],
+      "keywords": {
+        "Keywords": {
+          "label": "Keywords",
+          "value": [
+            "BED",
+            "Extraction",
+            "Features",
+            "GFF3",
+            "GTF",
+            "Genome annotation"
+          ],
+          "icon": "mdi-tag"
+        },
+        "Topic": {
+          "label": "Topic",
+          "value": [
+            "Brain studies using images: 57.85%",
+            "Disease study using gene expression: 26.12%",
+            "Biological pathways and interactions: 7.47%",
+            "Drugs and chemical studies: 5.51%",
+            "Tools to perform sequence analysis: 2.67%",
+            "Genome sequence databases: 0.09%",
+            "Protein structure: 0.09%",
+            "Alignment algorithms and methods: 0.09%",
+            "Sequence-based prediction of DNA and RNA: 0.09%"
+          ],
+          "icon": "mdi-tag"
+        }
+      }
+    }
+  },
+  {
+    "data": {
+      "$validator": "/dcic/signature-commons-schema/v5/core/signature.json",
+      "id": "27462e4f-1c6d-47af-8838-27a1a0b437f7",
+      "library": "68ca470b-cd49-49c3-b54a-a2a980361df5",
+      "meta": {
+        "$validator": "https://raw.githubusercontent.com/MaayanLab/BioToolStory/master/validators/btools_tools.json",
+        "Abstract": "The protonation of titratable residues has a significant impact on the structure and function of biomolecules influencing many physicochemical and ADME properties. Thus the importance of the estimation of protonation free energies pKa values is paramount in different scientific communities including bioinformatics structural biology or medicinal chemistry. Here we introduce PypKa a flexible tool to predict PoissonBoltzmann/Monte Carlobased pKa values of titratable sites in proteins. This application was benchmarked using a large data set of experimental values to show that our single structurebased method is fast and has a competitive performance. This is a free and opensource tool that provides a simple reusable and extensible Python API and CLI for pKa calculations with a valuable tradeoff between fast and accurate predictions. PypKa allows pKa calculations in existing protocols with the addition of a few extra lines of code. PypKa supports CPU parallel computing on solvated proteins obtained from the PDB repository but also from MD simulations using three common naming schemes GROMOS AMBER and CHARMM. The code and documentation to this opensource project is publicly available at https//github.com/mmsfcul/PypKa.",
+        "Altmetric_Score": 0.25,
+        "Article_Date": "2020-08-28",
+        "Article_Language": [
+          "eng"
+        ],
+        "Article_Title": "PypKa a flexible Python module for PoissonBoltzmann based pKa calculations.",
+        "Author_Information": [
+          {
+            "ForeName": "Pedro B P S",
+            "Initials": "PBPS",
+            "LastName": "Reis",
+            "Name": "Pedro B P S Reis"
+          },
+          {
+            "ForeName": "Diogo",
+            "Initials": "D",
+            "LastName": "Vila-Viçosa",
+            "Name": "Diogo Vila-Viçosa"
+          },
+          {
+            "ForeName": "Walter",
+            "Initials": "W",
+            "LastName": "Rocchia",
+            "Name": "Walter Rocchia"
+          },
+          {
+            "ForeName": "Miguel",
+            "Initials": "M",
+            "LastName": "Machuqueiro",
+            "Name": "Miguel Machuqueiro"
+          }
+        ],
+        "Citations": 0,
+        "Cited_By_Posts_Count": 1,
+        "DOI": "10.1021/acs.jcim.0c00718",
+        "Electronic_Location_Identifier": "[]",
+        "ISSN": "1549-960X",
+        "Journal": "Journal of Chemical Information & Modeling",
+        "Journal_Title": "Journal of chemical information and modeling",
+        "Last_Author": {
+          "ForeName": "Miguel",
+          "Initials": "M",
+          "LastName": "Machuqueiro",
+          "Name": "Miguel Machuqueiro"
+        },
+        "PMID": [
+          32857502
+        ],
+        "Publication_Type": [
+          "Journal Article"
+        ],
+        "Readers_Count": 0,
+        "Tool_Description": "a flexible Python module for PoissonBoltzmann based pKa calculations.",
+        "Tool_Name": "PypKa",
+        "Topic": [
+          {
+            "LDA_probability": 0.4284188486,
+            "Topic": "Brain studies using images",
+            "Topic_number": "9"
+          },
+          {
+            "LDA_probability": 0.3415553731,
+            "Topic": "Alignment algorithms and methods",
+            "Topic_number": "2"
+          },
+          {
+            "LDA_probability": 0.1998986612,
+            "Topic": "Drugs and chemical studies",
+            "Topic_number": "8"
+          },
+          {
+            "LDA_probability": 0.0235873221,
+            "Topic": "Sequence-based prediction of DNA and RNA",
+            "Topic_number": "4"
+          },
+          {
+            "LDA_probability": 0.0013083974,
+            "Topic": "Protein structure",
+            "Topic_number": "6"
+          },
+          {
+            "LDA_probability": 0.0013081718,
+            "Topic": "Genome sequence databases",
+            "Topic_number": "1"
+          },
+          {
+            "LDA_probability": 0.0013079229,
+            "Topic": "Disease study using gene expression",
+            "Topic_number": "5"
+          },
+          {
+            "LDA_probability": 0.0013076945,
+            "Topic": "Tools to perform sequence analysis",
+            "Topic_number": "3"
+          },
+          {
+            "LDA_probability": 0.0013076085,
+            "Topic": "Biological pathways and interactions",
+            "Topic_number": "7"
+          }
+        ],
+        "Year": 2020,
+        "is_tool": 1,
+        "tool_homepage_url": "https://github.com/mmsfcul/PypKa",
+        "url_status": 404
+      }
+    },
+    "info": {
+      "id": "27462e4f-1c6d-47af-8838-27a1a0b437f7",
+      "display": {
+        "PMID": {
+          "text": "32857502",
+          "hyperlink": "https://www.ncbi.nlm.nih.gov/pubmed/32857502",
+          "label": "PMID"
+        }
+      },
+      "subtitle": {
+        "text": "a flexible Python module for PoissonBoltzmann based pKa calculations.",
+        "label": "Description"
+      },
+      "name": {
+        "text": "PypKa",
+        "label": "Image",
+        "alt": "PypKa",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "hyperlink": "https://github.com/mmsfcul/PypKa"
+      },
+      "icon": {
+        "label": "Image",
+        "alt": "PypKa",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "text": "PypKa",
+        "hyperlink": "https://github.com/mmsfcul/PypKa"
+      },
+      "urlcheck": {
+        "label": "Image",
+        "alt": "PypKa",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "text": "PypKa",
+        "hyperlink": "https://github.com/mmsfcul/PypKa"
+      },
+      "scores": {
+        "meta.Citations": {
+          "label": "Citations",
+          "value": "0",
+          "field_name": "meta.Citations",
+          "icon": "mdi-fountain-pen-tip"
+        }
+      },
+      "tags": [
+        {
+          "text": "Miguel Machuqueiro",
+          "label": "Last Author",
+          "icon": "mdi-fountain-pen-tip",
+          "priority": 6
+        },
+        {
+          "text": "2020",
+          "label": "Year",
+          "icon": "mdi-calendar-blank",
+          "priority": 6
+        }
+      ],
+      "download": [],
+      "keywords": {
+        "Topic": {
+          "label": "Topic",
+          "value": [
+            "Brain studies using images: 42.84%",
+            "Alignment algorithms and methods: 34.16%",
+            "Drugs and chemical studies: 19.99%",
+            "Sequence-based prediction of DNA and RNA: 2.36%",
+            "Protein structure: 0.13%",
+            "Genome sequence databases: 0.13%",
+            "Disease study using gene expression: 0.13%",
+            "Tools to perform sequence analysis: 0.13%",
+            "Biological pathways and interactions: 0.13%"
+          ],
+          "icon": "mdi-tag"
+        }
+      }
+    }
+  },
+  {
+    "data": {
+      "$validator": "/dcic/signature-commons-schema/v5/core/signature.json",
+      "id": "28a7b7cf-7e27-4b57-8787-7c4d280611f3",
+      "library": "85d56c8b-1021-4324-ba27-9ac8c932324d",
+      "meta": {
+        "$validator": "https://raw.githubusercontent.com/MaayanLab/BioToolStory/master/validators/btools_tools.json",
+        "Abstract": "Cancers are promoted by abnormal alterations in biological processes such as cell cycle and apoptosis. An immediate reason for those aberrant processes is the deregulation of their involved transcription factors TFs. Thus the deregulated TFs in cancer have been experimented as successful therapeutic targets such as RARA and RUNX1. This therapeutic strategy can be accelerated by characterizing new potential TF targets. Two kinds of therapeutic signatures of TFs in A375 skin and HT29 colon cancer cells were characterized by analyzing TF activities under effective and ineffective compounds to cancer. Firstly the therapeutic TFs TTs were identified as the TFs that are significantly activated or repressed under effective compared to ineffective compounds. Secondly the therapeutically correlated TF pairs TCPs were determined as the TF pairs whose activity correlations show substantial discrepancy between the effective and ineffective compounds. It was facilitated by incorporating 1 compoundinduced gene expressions LINCS 2 compoundinduced cell viabilities GDSC and 3 TF target interactions TRUST2. As a result among 627 TFs the 35 TTs such as MYCN and TP53 and the 214 TCPs such as FOXO3  POU2F2 pair were identified. The TTs and the proteins on the paths between TCPs were compared with the known therapeutic targets tumor suppressors oncogenes and CRISPRCas9 knockout screening which yielded significant consequences. We expect that the results provide good candidates for therapeutic TF targets in cancer. The data and Python implementations are available at https//github.com/jmjung83/TT_and_TCP. Supplementary data are available at Bioinformatics online.",
+        "Altmetric_Score": 0.75,
+        "Article_Date": "2020-09-04",
+        "Article_Language": [
+          "eng"
+        ],
+        "Article_Title": "Characterizing therapeutic signatures of transcription factors in cancer by incorporating profiles in compound treated cells.",
+        "Author_Information": [
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "Division of Data Science, College of Information and Communication Technology, The University of Suwon, Hwaseong, Republic of Korea."
+              }
+            ],
+            "ForeName": "Jinmyung",
+            "Initials": "J",
+            "LastName": "Jung",
+            "Name": "Jinmyung Jung"
+          }
+        ],
+        "Citations": 0,
+        "Cited_By_Posts_Count": 2,
+        "DOI": "10.1093/bioinformatics/btaa765",
+        "Electronic_Location_Identifier": "[]",
+        "ISSN": "1367-4811",
+        "Institution": "Division of Data Science, College of Information and Communication Technology, The University of Suwon, Hwaseong, Republic of Korea.",
+        "Journal": "Bioinformatics",
+        "Journal_Title": "Bioinformatics (Oxford, England)",
+        "Last_Author": {
+          "ForeName": "Jinmyung",
+          "Initials": "J",
+          "LastName": "Jung",
+          "Name": "Jinmyung Jung"
+        },
+        "PMID": [
+          32886093
+        ],
+        "Publication_Type": [
+          "Journal Article"
+        ],
+        "Readers_Count": 0,
+        "Tool_Description": "Characterizing therapeutic signatures of transcription factors in cancer by incorporating profiles in compound treated cells",
+        "Tool_Name": "TTandTC",
+        "Topic": [
+          {
+            "LDA_probability": 0.3466884557,
+            "Topic": "Sequence-based prediction of DNA and RNA",
+            "Topic_number": "4"
+          },
+          {
+            "LDA_probability": 0.2987810989,
+            "Topic": "Protein structure",
+            "Topic_number": "6"
+          },
+          {
+            "LDA_probability": 0.173162338,
+            "Topic": "Tools to perform sequence analysis",
+            "Topic_number": "3"
+          },
+          {
+            "LDA_probability": 0.076581668,
+            "Topic": "Drugs and chemical studies",
+            "Topic_number": "8"
+          },
+          {
+            "LDA_probability": 0.0659531709,
+            "Topic": "Alignment algorithms and methods",
+            "Topic_number": "2"
+          },
+          {
+            "LDA_probability": 0.0359076307,
+            "Topic": "Disease study using gene expression",
+            "Topic_number": "5"
+          },
+          {
+            "LDA_probability": 0.0009756304,
+            "Topic": "Brain studies using images",
+            "Topic_number": "9"
+          },
+          {
+            "LDA_probability": 0.0009751944,
+            "Topic": "Biological pathways and interactions",
+            "Topic_number": "7"
+          },
+          {
+            "LDA_probability": 0.0009748129,
+            "Topic": "Genome sequence databases",
+            "Topic_number": "1"
+          }
+        ],
+        "Year": 2020,
+        "is_tool": 1,
+        "tool_homepage_url": "https://github.com/jmjung83/TTandTCP",
+        "url_status": 404
+      }
+    },
+    "info": {
+      "id": "28a7b7cf-7e27-4b57-8787-7c4d280611f3",
+      "display": {
+        "PMID": {
+          "text": "32886093",
+          "hyperlink": "https://www.ncbi.nlm.nih.gov/pubmed/32886093",
+          "label": "PMID"
+        }
+      },
+      "subtitle": {
+        "text": "Characterizing therapeutic signatures of transcription factors in cancer by incorporating profiles in compound treated cells",
+        "label": "Description"
+      },
+      "name": {
+        "text": "TTandTC",
+        "label": "Image",
+        "alt": "TTandTC",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "hyperlink": "https://github.com/jmjung83/TTandTCP"
+      },
+      "icon": {
+        "label": "Image",
+        "alt": "TTandTC",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "text": "TTandTC",
+        "hyperlink": "https://github.com/jmjung83/TTandTCP"
+      },
+      "urlcheck": {
+        "label": "Image",
+        "alt": "TTandTC",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "text": "TTandTC",
+        "hyperlink": "https://github.com/jmjung83/TTandTCP"
+      },
+      "scores": {
+        "meta.Citations": {
+          "label": "Citations",
+          "value": "0",
+          "field_name": "meta.Citations",
+          "icon": "mdi-fountain-pen-tip"
+        }
+      },
+      "tags": [
+        {
+          "text": "Jinmyung Jung",
+          "label": "Last Author",
+          "icon": "mdi-fountain-pen-tip",
+          "priority": 6
+        },
+        {
+          "text": "2020",
+          "label": "Year",
+          "icon": "mdi-calendar-blank",
+          "priority": 6
+        }
+      ],
+      "download": [],
+      "keywords": {
+        "Topic": {
+          "label": "Topic",
+          "value": [
+            "Sequence-based prediction of DNA and RNA: 34.67%",
+            "Protein structure: 29.88%",
+            "Tools to perform sequence analysis: 17.32%",
+            "Drugs and chemical studies: 7.66%",
+            "Alignment algorithms and methods: 6.60%",
+            "Disease study using gene expression: 3.59%",
+            "Brain studies using images: 0.10%",
+            "Biological pathways and interactions: 0.10%",
+            "Genome sequence databases: 0.10%"
+          ],
+          "icon": "mdi-tag"
+        }
+      }
+    }
+  },
+  {
+    "data": {
+      "$validator": "/dcic/signature-commons-schema/v5/core/signature.json",
+      "id": "2957accd-2cfc-4165-a319-7c9f999af0c8",
+      "library": "51328038-17d6-4599-a64b-d70283ab6df9",
+      "meta": {
+        "$validator": "https://raw.githubusercontent.com/MaayanLab/BioToolStory/master/validators/btools_tools.json",
+        "Abstract": "Immunogenicity is an important concern for therapeutic antibodies during drug development. By analyzing cocrystal structures of idiotypic antibodies and their antibodies we found that antiidiotypic antibodies usually bind the Complementarity Determining Regions CDR of idiotypic antibodies. Sequence and structural features were identified for distinguishing immunogenic antibodies from nonimmunogenic antibodies. For example nonimmunogenic antibodies have a significantly larger cavity volume at the CDR region and a more hydrophobic CDRH3 loop than immunogenic antibodies. Antibodies containing no Gly at the turn of CDRH2 loop are often immunogenic. We integrated these features together with a machine learning platform to Predict Immunogenicity for humanized and full human THerapeutic Antibodies PITHA. This method achieved an accuracy of 83 in leaveoneout experiment for 29 therapeutic antibodies with available crystal structures. The accuracy decreased to 65 for 23 test antibodies with modeled structures because their crystal structures were not available and the prediction was made with modeled structures. The server of this method is accessible at http//mabmedicine.com/PITHA.",
+        "Article_Date": "2020-08-31",
+        "Article_Language": [
+          "eng"
+        ],
+        "Article_Title": "Prediction of immunogenicity for humanized and full human therapeutic antibodies.",
+        "Author_Information": [
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "Department of Research and Development, Bio-Thera Solutions, Guangzhou, P. R. China."
+              }
+            ],
+            "ForeName": "Shide",
+            "Initials": "S",
+            "LastName": "Liang",
+            "Name": "Shide Liang"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "School of Biological Sciences, University of Nebraska, Lincoln, NE, United States of America."
+              }
+            ],
+            "ForeName": "Chi",
+            "Initials": "C",
+            "LastName": "Zhang",
+            "Name": "Chi Zhang"
+          }
+        ],
+        "Citations": 0,
+        "Country": "China",
+        "Electronic_Location_Identifier": "[]",
+        "ISSN": "1932-6203",
+        "Institution": "School of Biological Sciences, University of Nebraska, Lincoln, NE, United States of America.",
+        "Journal_Title": "PloS one",
+        "Last_Author": {
+          "ForeName": "Chi",
+          "Initials": "C",
+          "LastName": "Zhang",
+          "Name": "Chi Zhang"
+        },
+        "PMID": [
+          32866159
+        ],
+        "Publication_Type": [
+          "Journal Article"
+        ],
+        "Tool_Description": "Prediction of immunogenicity for humanized and full human therapeutic antibodies",
+        "Tool_Name": "CDR",
+        "Topic": [
+          {
+            "LDA_probability": 0.8509355483,
+            "Topic": "Alignment algorithms and methods",
+            "Topic_number": "2"
+          },
+          {
+            "LDA_probability": 0.0632340327,
+            "Topic": "Sequence-based prediction of DNA and RNA",
+            "Topic_number": "4"
+          },
+          {
+            "LDA_probability": 0.0399725241,
+            "Topic": "Brain studies using images",
+            "Topic_number": "9"
+          },
+          {
+            "LDA_probability": 0.0388218961,
+            "Topic": "Drugs and chemical studies",
+            "Topic_number": "8"
+          },
+          {
+            "LDA_probability": 0.0014075608,
+            "Topic": "Disease study using gene expression",
+            "Topic_number": "5"
+          },
+          {
+            "LDA_probability": 0.0014074381,
+            "Topic": "Protein structure",
+            "Topic_number": "6"
+          },
+          {
+            "LDA_probability": 0.0014071523,
+            "Topic": "Biological pathways and interactions",
+            "Topic_number": "7"
+          },
+          {
+            "LDA_probability": 0.0014071015,
+            "Topic": "Tools to perform sequence analysis",
+            "Topic_number": "3"
+          },
+          {
+            "LDA_probability": 0.0014067461,
+            "Topic": "Genome sequence databases",
+            "Topic_number": "1"
+          }
+        ],
+        "Year": 2020,
+        "is_tool": 1,
+        "tool_homepage_url": "http://mabmedicine.com/PITHA",
+        "url_status": 200
+      }
+    },
+    "info": {
+      "id": "2957accd-2cfc-4165-a319-7c9f999af0c8",
+      "display": {
+        "PMID": {
+          "text": "32866159",
+          "hyperlink": "https://www.ncbi.nlm.nih.gov/pubmed/32866159",
+          "label": "PMID"
+        }
+      },
+      "subtitle": {
+        "text": "Prediction of immunogenicity for humanized and full human therapeutic antibodies",
+        "label": "Description"
+      },
+      "name": {
+        "text": "CDR",
+        "label": "Image",
+        "alt": "CDR",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "hyperlink": "http://mabmedicine.com/PITHA"
+      },
+      "icon": {
+        "label": "Image",
+        "alt": "CDR",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "text": "CDR",
+        "hyperlink": "http://mabmedicine.com/PITHA"
+      },
+      "urlcheck": {
+        "label": "Image",
+        "alt": "CDR",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "text": "CDR",
+        "hyperlink": "http://mabmedicine.com/PITHA"
+      },
+      "scores": {
+        "meta.Citations": {
+          "label": "Citations",
+          "value": "0",
+          "field_name": "meta.Citations",
+          "icon": "mdi-fountain-pen-tip"
+        }
+      },
+      "tags": [
+        {
+          "text": "Chi Zhang",
+          "label": "Last Author",
+          "icon": "mdi-fountain-pen-tip",
+          "priority": 6
+        },
+        {
+          "text": "2020",
+          "label": "Year",
+          "icon": "mdi-calendar-blank",
+          "priority": 6
+        }
+      ],
+      "download": [],
+      "keywords": {
+        "Topic": {
+          "label": "Topic",
+          "value": [
+            "Alignment algorithms and methods: 85.09%",
+            "Sequence-based prediction of DNA and RNA: 6.32%",
+            "Brain studies using images: 4.00%",
+            "Drugs and chemical studies: 3.88%",
+            "Disease study using gene expression: 0.14%",
+            "Protein structure: 0.14%",
+            "Biological pathways and interactions: 0.14%",
+            "Tools to perform sequence analysis: 0.14%",
+            "Genome sequence databases: 0.14%"
+          ],
+          "icon": "mdi-tag"
+        }
+      }
+    }
+  },
+  {
+    "data": {
+      "$validator": "/dcic/signature-commons-schema/v5/core/signature.json",
+      "id": "38378240-3203-441b-bbbf-4fb77e71d094",
+      "library": "16f2ee90-0457-4516-887a-c935c28ab384",
+      "meta": {
+        "$validator": "https://raw.githubusercontent.com/MaayanLab/BioToolStory/master/validators/btools_tools.json",
+        "Abstract": "The process of learning good representations for machine learning tasks can be very computationally expensive. Typically we facilitate the same backbones learned on the training set to infer the labels of testing data. Interestingly This learning and inference paradigm however is quite different from the typical inference scheme of human biological visual systems. Essentially neuroscience studies have shown that the right hemisphere of the human brain predominantly makes a fast processing of lowfrequency spatial signals while the left hemisphere more focuses on analyzing highfrequency information in a slower way. And the lowpass analysis helps facilitate the highpass analysis via a feedback form. Inspired by this biological vision mechanism this paper explores the possibility of learning a layerskippable inference network. Specifically we propose a layerskippable network that dynamically carries out coarsetofine object categorization. Such a network has two branches to jointly deal with both coarse and finegrained classification tasks. The layerskipping mechanism is proposed to learn a gating network by generating dynamic inference graphs and reducing the computational cost by detouring the inference path from some layers. This adaptive path inference strategy endows the network with better flexibility and larger capacity and makes the highperformance deep networks with dynamic structures. To efficiently train the gating network a novel rankingbased loss function is presented. Furthermore the learned representations are enhanced by the proposed topdown feedback facilitation and featurewise affine transformation individually. The former one employs features of a coarse branch to help the finegrained object recognition task while the latter one encodes the selected path to enhance the final feature representations. Extensive experiments are conducted on several widely used coarsetofine object categorization benchmarks and promising results are achieved by our proposed model. Quite surprisingly our layerskipping mechanism improves the network robustness to adversarial attacks. The codes and models are released on https//github.com/avalonstrel/DSN.",
+        "Altmetric_Score": 0.25,
+        "Article_Date": "2020-08-28",
+        "Article_Language": [
+          "eng"
+        ],
+        "Article_Title": "Learning LayerSkippable Inference Network.",
+        "Author_Information": [
+          {
+            "ForeName": "Yu-Gang",
+            "Initials": "YG",
+            "LastName": "Jiang",
+            "Name": "Yu-Gang Jiang"
+          },
+          {
+            "ForeName": "Changmao",
+            "Initials": "C",
+            "LastName": "Cheng",
+            "Name": "Changmao Cheng"
+          },
+          {
+            "ForeName": "Hangyu",
+            "Initials": "H",
+            "LastName": "Lin",
+            "Name": "Hangyu Lin"
+          },
+          {
+            "ForeName": "Yanwei",
+            "Initials": "Y",
+            "LastName": "Fu",
+            "Name": "Yanwei Fu"
+          }
+        ],
+        "Citations": 0,
+        "Cited_By_Posts_Count": 1,
+        "DOI": "10.1109/tip.2020.3018269",
+        "Electronic_Location_Identifier": "[]",
+        "ISSN": "1941-0042",
+        "Journal": "IEEE Transactions on Image Processing",
+        "Journal_Title": "IEEE transactions on image processing : a publication of the IEEE Signal Processing Society",
+        "Last_Author": {
+          "ForeName": "Yanwei",
+          "Initials": "Y",
+          "LastName": "Fu",
+          "Name": "Yanwei Fu"
+        },
+        "PMID": [
+          32857695
+        ],
+        "Publication_Type": [
+          "Journal Article"
+        ],
+        "Readers_Count": 0,
+        "Tool_Description": "Learning LayerSkippable Inference Network",
+        "Tool_Name": "AbstractText",
+        "Topic": [
+          {
+            "LDA_probability": 0.6169170224,
+            "Topic": "Protein structure",
+            "Topic_number": "6"
+          },
+          {
+            "LDA_probability": 0.2353194115,
+            "Topic": "Drugs and chemical studies",
+            "Topic_number": "8"
+          },
+          {
+            "LDA_probability": 0.0652114353,
+            "Topic": "Sequence-based prediction of DNA and RNA",
+            "Topic_number": "4"
+          },
+          {
+            "LDA_probability": 0.0345152455,
+            "Topic": "Genome sequence databases",
+            "Topic_number": "1"
+          },
+          {
+            "LDA_probability": 0.0268353814,
+            "Topic": "Alignment algorithms and methods",
+            "Topic_number": "2"
+          },
+          {
+            "LDA_probability": 0.0112454258,
+            "Topic": "Tools to perform sequence analysis",
+            "Topic_number": "3"
+          },
+          {
+            "LDA_probability": 0.0086478359,
+            "Topic": "Biological pathways and interactions",
+            "Topic_number": "7"
+          },
+          {
+            "LDA_probability": 0.0006542221,
+            "Topic": "Brain studies using images",
+            "Topic_number": "9"
+          },
+          {
+            "LDA_probability": 0.00065402,
+            "Topic": "Disease study using gene expression",
+            "Topic_number": "5"
+          }
+        ],
+        "Year": 2020,
+        "is_tool": 1,
+        "tool_homepage_url": "https://github.com/avalonstrel/DSN",
+        "url_status": 404
+      }
+    },
+    "info": {
+      "id": "38378240-3203-441b-bbbf-4fb77e71d094",
+      "display": {
+        "PMID": {
+          "text": "32857695",
+          "hyperlink": "https://www.ncbi.nlm.nih.gov/pubmed/32857695",
+          "label": "PMID"
+        }
+      },
+      "subtitle": {
+        "text": "Learning LayerSkippable Inference Network",
+        "label": "Description"
+      },
+      "name": {
+        "text": "AbstractText",
+        "label": "Image",
+        "alt": "AbstractText",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "hyperlink": "https://github.com/avalonstrel/DSN"
+      },
+      "icon": {
+        "label": "Image",
+        "alt": "AbstractText",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "text": "AbstractText",
+        "hyperlink": "https://github.com/avalonstrel/DSN"
+      },
+      "urlcheck": {
+        "label": "Image",
+        "alt": "AbstractText",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "text": "AbstractText",
+        "hyperlink": "https://github.com/avalonstrel/DSN"
+      },
+      "scores": {
+        "meta.Citations": {
+          "label": "Citations",
+          "value": "0",
+          "field_name": "meta.Citations",
+          "icon": "mdi-fountain-pen-tip"
+        }
+      },
+      "tags": [
+        {
+          "text": "Yanwei Fu",
+          "label": "Last Author",
+          "icon": "mdi-fountain-pen-tip",
+          "priority": 6
+        },
+        {
+          "text": "2020",
+          "label": "Year",
+          "icon": "mdi-calendar-blank",
+          "priority": 6
+        }
+      ],
+      "download": [],
+      "keywords": {
+        "Topic": {
+          "label": "Topic",
+          "value": [
+            "Protein structure: 61.69%",
+            "Drugs and chemical studies: 23.53%",
+            "Sequence-based prediction of DNA and RNA: 6.52%",
+            "Genome sequence databases: 3.45%",
+            "Alignment algorithms and methods: 2.68%",
+            "Tools to perform sequence analysis: 1.12%",
+            "Biological pathways and interactions: 0.86%",
+            "Brain studies using images: 0.07%",
+            "Disease study using gene expression: 0.07%"
+          ],
+          "icon": "mdi-tag"
+        }
+      }
+    }
+  },
+  {
+    "data": {
+      "$validator": "/dcic/signature-commons-schema/v5/core/signature.json",
+      "id": "3c25a167-c77c-42a0-b637-aae5c986393f",
+      "library": "85d56c8b-1021-4324-ba27-9ac8c932324d",
+      "meta": {
+        "$validator": "https://raw.githubusercontent.com/MaayanLab/BioToolStory/master/validators/btools_tools.json",
+        "Abstract": "Vast majority of human genetic disorders are associated with mutations that affect proteinprotein interactions by altering wild type binding affinity. Therefore it is extremely important to assess the effect of mutations on proteinprotein binding free energy to assist the development of therapeutic solutions. Currently the most popular approaches use structural information to deliver the predictions which precludes them to be applicable on genomescale investigations. Indeed with the progress of genomic sequencing researchers are frequently dealing with assessing effect of mutations for which there is no structure available. Here we report a Gradient Boosting Decision Tree GBDT machine learning algorithm the SAAMBESEQ which is completely sequencebased and does not require structural information at all. SAAMBESEQ utilizes 80 features representing evolutionary information sequencebased features and change of physical properties upon mutation at the mutation site. The approach is shown to achieve Pearson correlation coefficient PCC of 0.83 in 5fold cross validation in a benchmarking test against experimentally determined binding free energy change ΔΔG. Further a blind test noSTRUC is compiled collecting experimental ΔΔG upon mutation for protein complexes for which structure is not available and used to benchmark SAAMBESEQ resulting in PCC in the range of 0.37 to 0.46. The accuracy of SAAMBESEQ method is found to be either better or comparable to most advanced structurebased methods. SAAMBESEQ is very fast available as webserver and standalone code and indeed utilizes only sequence information and thus it is applicable for genomescale investigations to study the effect of mutations on proteinprotein interactions. SAAMBESEQ is available at http//compbio.clemson.edu/saambe_webserver/indexSEQ.phpstarted. Supplementary data are available at Bioinformatics online.",
+        "Altmetric_Score": 0.5,
+        "Article_Date": "2020-08-31",
+        "Article_Language": [
+          "eng"
+        ],
+        "Article_Title": "SAAMBESEQ A Sequencebased Method for Predicting Mutation Effect on Proteinprotein Binding Affinity.",
+        "Author_Information": [
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "Department of Physics and Astronomy, Clemson University, Clemson, SC, USA."
+              }
+            ],
+            "ForeName": "Gen",
+            "Initials": "G",
+            "LastName": "Li",
+            "Name": "Gen Li"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "Department of Physics and Astronomy, Clemson University, Clemson, SC, USA."
+              }
+            ],
+            "ForeName": "Swagata",
+            "Initials": "S",
+            "LastName": "Pahari",
+            "Name": "Swagata Pahari"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "Department of Physics and Astronomy, Clemson University, Clemson, SC, USA."
+              }
+            ],
+            "ForeName": "Adithya",
+            "Initials": "A",
+            "LastName": "Krishna Murthy",
+            "Name": "Adithya Krishna Murthy"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "Department of Computational Biology, Cornell University, Ithaca, NY, USA."
+              }
+            ],
+            "ForeName": "Siqi",
+            "Initials": "S",
+            "LastName": "Liang",
+            "Name": "Siqi Liang"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "Department of Computational Biology, Cornell University, Ithaca, NY, USA."
+              }
+            ],
+            "ForeName": "Robert",
+            "Initials": "R",
+            "LastName": "Fragoza",
+            "Name": "Robert Fragoza"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "Department of Computational Biology, Cornell University, Ithaca, NY, USA."
+              }
+            ],
+            "ForeName": "Haiyuan",
+            "Initials": "H",
+            "LastName": "Yu",
+            "Name": "Haiyuan Yu"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "Department of Physics and Astronomy, Clemson University, Clemson, SC, USA."
+              }
+            ],
+            "ForeName": "Emil",
+            "Initials": "E",
+            "LastName": "Alexov",
+            "Name": "Emil Alexov"
+          }
+        ],
+        "Citations": 0,
+        "Cited_By_Posts_Count": 1,
+        "Country": "USA",
+        "DOI": "10.1093/bioinformatics/btaa761",
+        "Electronic_Location_Identifier": "[]",
+        "ISSN": "1367-4811",
+        "Institution": "Department of Physics and Astronomy, Clemson University, Clemson, SC, USA.",
+        "Journal": "Bioinformatics",
+        "Journal_Title": "Bioinformatics (Oxford, England)",
+        "Last_Author": {
+          "ForeName": "Emil",
+          "Initials": "E",
+          "LastName": "Alexov",
+          "Name": "Emil Alexov"
+        },
+        "PMID": [
+          32866236
+        ],
+        "Publication_Type": [
+          "Journal Article"
+        ],
+        "Readers_Count": 0,
+        "Tool_Description": "A Sequencebased Method for Predicting Mutation Effect on Proteinprotein Binding Affinity.",
+        "Tool_Name": "SAAMBE-SEQ",
+        "Topic": [
+          {
+            "LDA_probability": 0.4804659815,
+            "Topic": "Alignment algorithms and methods",
+            "Topic_number": "2"
+          },
+          {
+            "LDA_probability": 0.2237769126,
+            "Topic": "Protein structure",
+            "Topic_number": "6"
+          },
+          {
+            "LDA_probability": 0.1884684967,
+            "Topic": "Sequence-based prediction of DNA and RNA",
+            "Topic_number": "4"
+          },
+          {
+            "LDA_probability": 0.0528963818,
+            "Topic": "Disease study using gene expression",
+            "Topic_number": "5"
+          },
+          {
+            "LDA_probability": 0.0307376159,
+            "Topic": "Genome sequence databases",
+            "Topic_number": "1"
+          },
+          {
+            "LDA_probability": 0.0211466208,
+            "Topic": "Biological pathways and interactions",
+            "Topic_number": "7"
+          },
+          {
+            "LDA_probability": 0.0008360885,
+            "Topic": "Brain studies using images",
+            "Topic_number": "9"
+          },
+          {
+            "LDA_probability": 0.0008359845,
+            "Topic": "Drugs and chemical studies",
+            "Topic_number": "8"
+          },
+          {
+            "LDA_probability": 0.0008359177,
+            "Topic": "Tools to perform sequence analysis",
+            "Topic_number": "3"
+          }
+        ],
+        "Year": 2020,
+        "is_tool": 1,
+        "tool_homepage_url": "http://compbio.clemson.edu/saambe_webserver/indexSEQ.phpstarted",
+        "url_status": 200
+      }
+    },
+    "info": {
+      "id": "3c25a167-c77c-42a0-b637-aae5c986393f",
+      "display": {
+        "PMID": {
+          "text": "32866236",
+          "hyperlink": "https://www.ncbi.nlm.nih.gov/pubmed/32866236",
+          "label": "PMID"
+        }
+      },
+      "subtitle": {
+        "text": "A Sequencebased Method for Predicting Mutation Effect on Proteinprotein Binding Affinity.",
+        "label": "Description"
+      },
+      "name": {
+        "text": "SAAMBE-SEQ",
+        "label": "Image",
+        "alt": "SAAMBE-SEQ",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "hyperlink": "http://compbio.clemson.edu/saambe_webserver/indexSEQ.phpstarted"
+      },
+      "icon": {
+        "label": "Image",
+        "alt": "SAAMBE-SEQ",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "text": "SAAMBE-SEQ",
+        "hyperlink": "http://compbio.clemson.edu/saambe_webserver/indexSEQ.phpstarted"
+      },
+      "urlcheck": {
+        "label": "Image",
+        "alt": "SAAMBE-SEQ",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "text": "SAAMBE-SEQ",
+        "hyperlink": "http://compbio.clemson.edu/saambe_webserver/indexSEQ.phpstarted"
+      },
+      "scores": {
+        "meta.Citations": {
+          "label": "Citations",
+          "value": "0",
+          "field_name": "meta.Citations",
+          "icon": "mdi-fountain-pen-tip"
+        }
+      },
+      "tags": [
+        {
+          "text": "Emil Alexov",
+          "label": "Last Author",
+          "icon": "mdi-fountain-pen-tip",
+          "priority": 6
+        },
+        {
+          "text": "2020",
+          "label": "Year",
+          "icon": "mdi-calendar-blank",
+          "priority": 6
+        }
+      ],
+      "download": [],
+      "keywords": {
+        "Topic": {
+          "label": "Topic",
+          "value": [
+            "Alignment algorithms and methods: 48.05%",
+            "Protein structure: 22.38%",
+            "Sequence-based prediction of DNA and RNA: 18.85%",
+            "Disease study using gene expression: 5.29%",
+            "Genome sequence databases: 3.07%",
+            "Biological pathways and interactions: 2.11%",
+            "Brain studies using images: 0.08%",
+            "Drugs and chemical studies: 0.08%",
+            "Tools to perform sequence analysis: 0.08%"
+          ],
+          "icon": "mdi-tag"
+        }
+      }
+    }
+  },
+  {
+    "data": {
+      "$validator": "/dcic/signature-commons-schema/v5/core/signature.json",
+      "id": "45e34c9e-9658-4e78-80b2-c199c77f61b3",
+      "library": "85d56c8b-1021-4324-ba27-9ac8c932324d",
+      "meta": {
+        "$validator": "https://raw.githubusercontent.com/MaayanLab/BioToolStory/master/validators/btools_tools.json",
+        "Abstract": "The 2019 novel coronavirus outbreak has significantly affected global health and society. Thus predicting biological function from pathogen sequence is crucial and urgently needed. However little work has been performed to identify viruses by the enzymes that they encode and which are key to pathogen propagation. We built a comprehensive scientific resource SARS2020 that integrates coronavirusrelated research genomic sequences and results of antiviral drug trials. In addition we built a consensus sequencecatalytic function model from which we identified the novel coronavirus as encoding the same proteinase as the Severe Acute Respiratory Syndrome virus. This datadriven sequencebased strategy will enable rapid identification of agents responsible for future epidemics. SARS2020 is available at http//design.rxnfinder.org/sars2020/. Supplementary data are available at Bioinformatics online.",
+        "Article_Date": "2020-09-01",
+        "Article_Language": [
+          "eng"
+        ],
+        "Article_Title": "SARS2020 An integrated platform for identification of novel coronavirus by a consensus sequencefunction model.",
+        "Author_Information": [
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "CAS Key Laboratory of Computational Biology, CAS-MPG Partner Institute for Computational Biology, Shanghai Institute of Nutrition and Health, University of Chinese Academy of Sciences, Chinese Academy of Sciences, Shanghai, China."
+              }
+            ],
+            "ForeName": "Dachuan",
+            "Initials": "D",
+            "LastName": "Zhang",
+            "Name": "Dachuan Zhang"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "CAS Key Laboratory of Computational Biology, CAS-MPG Partner Institute for Computational Biology, Shanghai Institute of Nutrition and Health, University of Chinese Academy of Sciences, Chinese Academy of Sciences, Shanghai, China."
+              }
+            ],
+            "ForeName": "Tong",
+            "Initials": "T",
+            "LastName": "Zhang",
+            "Name": "Tong Zhang"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "CAS Key Laboratory of Computational Biology, CAS-MPG Partner Institute for Computational Biology, Shanghai Institute of Nutrition and Health, University of Chinese Academy of Sciences, Chinese Academy of Sciences, Shanghai, China."
+              }
+            ],
+            "ForeName": "Sheng",
+            "Initials": "S",
+            "LastName": "Liu",
+            "Name": "Sheng Liu"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "CAS Key Laboratory of Computational Biology, CAS-MPG Partner Institute for Computational Biology, Shanghai Institute of Nutrition and Health, University of Chinese Academy of Sciences, Chinese Academy of Sciences, Shanghai, China."
+              }
+            ],
+            "ForeName": "Dandan",
+            "Initials": "D",
+            "LastName": "Sun",
+            "Name": "Dandan Sun"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "CAS Key Laboratory of Computational Biology, CAS-MPG Partner Institute for Computational Biology, Shanghai Institute of Nutrition and Health, University of Chinese Academy of Sciences, Chinese Academy of Sciences, Shanghai, China."
+              }
+            ],
+            "ForeName": "Shaozhen",
+            "Initials": "S",
+            "LastName": "Ding",
+            "Name": "Shaozhen Ding"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "CAS Key Laboratory of Computational Biology, CAS-MPG Partner Institute for Computational Biology, Shanghai Institute of Nutrition and Health, University of Chinese Academy of Sciences, Chinese Academy of Sciences, Shanghai, China."
+              }
+            ],
+            "ForeName": "Xingxiang",
+            "Initials": "X",
+            "LastName": "Cheng",
+            "Name": "Xingxiang Cheng"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "CAS Key Laboratory of Computational Biology, CAS-MPG Partner Institute for Computational Biology, Shanghai Institute of Nutrition and Health, University of Chinese Academy of Sciences, Chinese Academy of Sciences, Shanghai, China."
+              },
+              {
+                "Affiliation": "Tianjin Institute of Industrial Biotechnology, University of Chinese Academy of Sciences, Chinese Academy of Sciences, Tianjin, China."
+              }
+            ],
+            "ForeName": "Pengli",
+            "Initials": "P",
+            "LastName": "Cai",
+            "Name": "Pengli Cai"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "Tianjin Institute of Industrial Biotechnology, University of Chinese Academy of Sciences, Chinese Academy of Sciences, Tianjin, China."
+              }
+            ],
+            "ForeName": "Ailin",
+            "Initials": "A",
+            "LastName": "Ren",
+            "Name": "Ailin Ren"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "CAS Key Laboratory of Computational Biology, CAS-MPG Partner Institute for Computational Biology, Shanghai Institute of Nutrition and Health, University of Chinese Academy of Sciences, Chinese Academy of Sciences, Shanghai, China."
+              }
+            ],
+            "ForeName": "Mengying",
+            "Initials": "M",
+            "LastName": "Han",
+            "Name": "Mengying Han"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "CAS Key Laboratory of Computational Biology, CAS-MPG Partner Institute for Computational Biology, Shanghai Institute of Nutrition and Health, University of Chinese Academy of Sciences, Chinese Academy of Sciences, Shanghai, China."
+              }
+            ],
+            "ForeName": "Dongliang",
+            "Initials": "D",
+            "LastName": "Liu",
+            "Name": "Dongliang Liu"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "CAS Key Laboratory of Computational Biology, CAS-MPG Partner Institute for Computational Biology, Shanghai Institute of Nutrition and Health, University of Chinese Academy of Sciences, Chinese Academy of Sciences, Shanghai, China."
+              }
+            ],
+            "ForeName": "Cancan",
+            "Initials": "C",
+            "LastName": "Jia",
+            "Name": "Cancan Jia"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "CAS Key Laboratory of Computational Biology, CAS-MPG Partner Institute for Computational Biology, Shanghai Institute of Nutrition and Health, University of Chinese Academy of Sciences, Chinese Academy of Sciences, Shanghai, China."
+              }
+            ],
+            "ForeName": "Linlin",
+            "Initials": "L",
+            "LastName": "Gong",
+            "Name": "Linlin Gong"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "CAS Key Laboratory of Computational Biology, CAS-MPG Partner Institute for Computational Biology, Shanghai Institute of Nutrition and Health, University of Chinese Academy of Sciences, Chinese Academy of Sciences, Shanghai, China."
+              }
+            ],
+            "ForeName": "Rui",
+            "Initials": "R",
+            "LastName": "Zhang",
+            "Name": "Rui Zhang"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "CAS Key Laboratory of Computational Biology, CAS-MPG Partner Institute for Computational Biology, Shanghai Institute of Nutrition and Health, University of Chinese Academy of Sciences, Chinese Academy of Sciences, Shanghai, China."
+              }
+            ],
+            "ForeName": "Huadong",
+            "Initials": "H",
+            "LastName": "Xing",
+            "Name": "Huadong Xing"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "Wuhan LifeSynther Science and Technology Co. Limited, Wuhan, China."
+              }
+            ],
+            "ForeName": "Weizhong",
+            "Initials": "W",
+            "LastName": "Tu",
+            "Name": "Weizhong Tu"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "Wuhan LifeSynther Science and Technology Co. Limited, Wuhan, China."
+              }
+            ],
+            "ForeName": "Junni",
+            "Initials": "J",
+            "LastName": "Chen",
+            "Name": "Junni Chen"
+          },
+          {
+            "AffiliationInfo": [
+              {
+                "Affiliation": "CAS Key Laboratory of Computational Biology, CAS-MPG Partner Institute for Computational Biology, Shanghai Institute of Nutrition and Health, University of Chinese Academy of Sciences, Chinese Academy of Sciences, Shanghai, China."
+              }
+            ],
+            "ForeName": "Qian-Nan",
+            "Initials": "QN",
+            "LastName": "Hu",
+            "Name": "Qian-Nan Hu"
+          }
+        ],
+        "Citations": 0,
+        "Country": "China",
+        "Electronic_Location_Identifier": "[]",
+        "ISSN": "1367-4811",
+        "Institution": "CAS Key Laboratory of Computational Biology, CAS-MPG Partner Institute for Computational Biology, Shanghai Institute of Nutrition and Health, University of Chinese Academy of Sciences, Chinese Academy of Sciences, Shanghai, China.",
+        "Journal_Title": "Bioinformatics (Oxford, England)",
+        "Last_Author": {
+          "ForeName": "Qian-Nan",
+          "Initials": "QN",
+          "LastName": "Hu",
+          "Name": "Qian-Nan Hu"
+        },
+        "PMID": [
+          32871007
+        ],
+        "Publication_Type": [
+          "Journal Article"
+        ],
+        "Tool_Description": "An integrated platform for identification of novel coronavirus by a consensus sequencefunction model.",
+        "Tool_Name": "SARS2020",
+        "Topic": [
+          {
+            "LDA_probability": 0.3956422804,
+            "Topic": "Disease study using gene expression",
+            "Topic_number": "5"
+          },
+          {
+            "LDA_probability": 0.2622389097,
+            "Topic": "Alignment algorithms and methods",
+            "Topic_number": "2"
+          },
+          {
+            "LDA_probability": 0.1761093175,
+            "Topic": "Sequence-based prediction of DNA and RNA",
+            "Topic_number": "4"
+          },
+          {
+            "LDA_probability": 0.1344584805,
+            "Topic": "Protein structure",
+            "Topic_number": "6"
+          },
+          {
+            "LDA_probability": 0.0247091124,
+            "Topic": "Genome sequence databases",
+            "Topic_number": "1"
+          },
+          {
+            "LDA_probability": 0.0017106033,
+            "Topic": "Brain studies using images",
+            "Topic_number": "9"
+          },
+          {
+            "LDA_probability": 0.0017104526,
+            "Topic": "Tools to perform sequence analysis",
+            "Topic_number": "3"
+          },
+          {
+            "LDA_probability": 0.0017104335,
+            "Topic": "Drugs and chemical studies",
+            "Topic_number": "8"
+          },
+          {
+            "LDA_probability": 0.0017104101,
+            "Topic": "Biological pathways and interactions",
+            "Topic_number": "7"
+          }
+        ],
+        "Year": 2020,
+        "is_tool": 1,
+        "tool_homepage_url": "http://design.rxnfinder.org/sars2020/",
+        "url_status": "200"
+      }
+    },
+    "info": {
+      "id": "45e34c9e-9658-4e78-80b2-c199c77f61b3",
+      "display": {
+        "PMID": {
+          "text": "32871007",
+          "hyperlink": "https://www.ncbi.nlm.nih.gov/pubmed/32871007",
+          "label": "PMID"
+        }
+      },
+      "subtitle": {
+        "text": "An integrated platform for identification of novel coronavirus by a consensus sequencefunction model.",
+        "label": "Description"
+      },
+      "name": {
+        "text": "SARS2020",
+        "label": "Image",
+        "alt": "SARS2020",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "hyperlink": "http://design.rxnfinder.org/sars2020/"
+      },
+      "icon": {
+        "label": "Image",
+        "alt": "SARS2020",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "text": "SARS2020",
+        "hyperlink": "http://design.rxnfinder.org/sars2020/"
+      },
+      "urlcheck": {
+        "label": "Image",
+        "alt": "SARS2020",
+        "src": "https://maayanlab.cloud/biotoolstory/static/tools/tools.png",
+        "text": "SARS2020",
+        "hyperlink": "http://design.rxnfinder.org/sars2020/"
+      },
+      "scores": {
+        "meta.Citations": {
+          "label": "Citations",
+          "value": "0",
+          "field_name": "meta.Citations",
+          "icon": "mdi-fountain-pen-tip"
+        }
+      },
+      "tags": [
+        {
+          "text": "Qian-Nan Hu",
+          "label": "Last Author",
+          "icon": "mdi-fountain-pen-tip",
+          "priority": 6
+        },
+        {
+          "text": "2020",
+          "label": "Year",
+          "icon": "mdi-calendar-blank",
+          "priority": 6
+        }
+      ],
+      "download": [],
+      "keywords": {
+        "Topic": {
+          "label": "Topic",
+          "value": [
+            "Disease study using gene expression: 39.56%",
+            "Alignment algorithms and methods: 26.22%",
+            "Sequence-based prediction of DNA and RNA: 17.61%",
+            "Protein structure: 13.45%",
+            "Genome sequence databases: 2.47%",
+            "Brain studies using images: 0.17%",
+            "Tools to perform sequence analysis: 0.17%",
+            "Drugs and chemical studies: 0.17%",
+            "Biological pathways and interactions: 0.17%"
+          ],
+          "icon": "mdi-tag"
+        }
+      }
+    }
+  }
+]
