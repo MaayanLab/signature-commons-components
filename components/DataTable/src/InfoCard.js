@@ -96,7 +96,7 @@ export const InfoCard = ({
                       </Grid>
                     }
                     {Object.entries(info.display).map(([label, value]) => 
-                      <Grid item xs={12}>
+                      <Grid item xs={12} key={`${label}_display`}>
                         <Highlight
                           Component={(props) => {
                             if (value.hyperlink !== undefined) {

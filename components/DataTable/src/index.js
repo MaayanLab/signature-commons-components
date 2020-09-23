@@ -1,5 +1,5 @@
 // Export Modules
-export { DataTable } from './DataTable';
+export { DataTableWrapper as DataTable } from './DataTable';
 export { Highlight } from './Highlight'
 export { IconComponent } from './IconComponent'
 export { ShowMeta } from './ShowMeta'

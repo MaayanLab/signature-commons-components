@@ -6,46 +6,57 @@ import { Typography } from '@material-ui/core';
 import { useTheme } from '@material-ui/styles'
 import { MuiThemeProvider } from '@material-ui/core'
 
+
+export const DataTableWrapper = (props) => {
+    const theme = useTheme()
+    if (theme!==null){
+        return(
+            <MuiThemeProvider theme={theme}>
+                <DataTable {...props}/>
+            </MuiThemeProvider>
+        )
+    }else{
+        return <DataTable {...props}/>
+    }
+} 
+
 export const DataTable = (props) => {
     const {TopComponents=[],
         BottomComponents=[],
         InfoCardComponent=InfoCard,
         entries} = props
-    const theme = useTheme()
     return(
-        <MuiThemeProvider theme={theme}>
-            <Grid container>
-                {TopComponents.map(comp=>{
-                    const {component,
-                        GridProps={},
-                        props
-                    } = comp
-                    return(
-                        <Grid item {...GridProps}>
-                            {component(props)}
-                        </Grid>
-                    )
-                })}
-                <Grid item style={{width:"100%"}}>
-                    {typeof entries === 'undefined' || entries.length == 0 ?
-                    <Typography variant="h5" >No entries</Typography>:
-                    entries.map(entry=>(
-                        <InfoCardComponent {...entry}/>
-                    ))}
-                </Grid>
-                {BottomComponents.map(comp=>{
-                    const {component,
-                        GridProps={},
-                        props
-                    } = comp
-                    return(
-                        <Grid item {...GridProps}>
-                            {component(props)}
-                        </Grid>
-                    )
-                })}
+        <Grid container>
+            {TopComponents.map(comp=>{
+                const {component,
+                    GridProps={},
+                    props
+                } = comp
+                return(
+                    <Grid item {...GridProps}>
+                        {component(props)}
+                    </Grid>
+                )
+            })}
+            <Grid item style={{width:"100%"}}>
+                {typeof entries === 'undefined' || entries.length == 0 ?
+                <Typography variant="h5" >No entries</Typography>:
+                entries.map(entry=>(
+                    <InfoCardComponent {...entry}/>
+                ))}
             </Grid>
-        </MuiThemeProvider> 
+            {BottomComponents.map(comp=>{
+                const {component,
+                    GridProps={},
+                    props
+                } = comp
+                return(
+                    <Grid item {...GridProps}>
+                        {component(props)}
+                    </Grid>
+                )
+            })}
+        </Grid>
     )
 }
 
