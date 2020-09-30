@@ -40,7 +40,7 @@ export function validURL(str) {
     } else if (Array.isArray(value)) {
       return (
         <Grid container
-          spacing={24}>
+          spacing={3}>
           {value.map((value, ind) => (
             <Grid item xs={12} key={ind}>
               <ShowMeta hidden={hidden} value={value} highlight={highlight} />
@@ -52,7 +52,7 @@ export function validURL(str) {
       if (value['@id'] !== undefined && value['@type'] !== undefined && value.meta !== undefined) {
         return (
           <Grid container
-            spacing={24}>
+            spacing={3}>
             <Grid item xs={12}>
               <Highlight
                 Component={(props) => <Typography variant={'h5'} {...props}>{props.children}</Typography>}
@@ -69,7 +69,7 @@ export function validURL(str) {
       } else if (value['@id'] !== undefined && value['@name'] !== undefined && value.meta !== undefined) {
         return (
           <Grid container
-            spacing={24}>
+            spacing={3}>
             <Grid item xs={12}>
               <Highlight
                 Component={(props) => <Typography variant={'h5'} {...props}>{props.children}</Typography>}
@@ -101,7 +101,7 @@ export function validURL(str) {
         <div>
           {Object.keys(value).filter((key) => (!key.startsWith('$') && key.toLowerCase() !== 'icon' && key!== 'extraProperties' && key!== '@type' && hidden.indexOf(value[key])===-1)).map((key, ind) => (
             <Grid container
-              spacing={24}
+              spacing={3}
               key={key}>
               <Grid item xs={6} xl={2} md={3} style={{ 
                 'textAlign': 'right',

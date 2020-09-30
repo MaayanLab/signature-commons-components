@@ -8,7 +8,7 @@ import PropTypes from 'prop-types'
 export const ExpandedMeta = ({expanded, data, highlight, props}) => {
     return (
     <Collapse in={expanded} timeout="auto" unmountOnExit >
-        <CardContent style={{height:"100%", padding: 10}}>
+        <CardContent style={{height:"100%", padding: 10, visibility: expanded ? 'visible': 'hidden' }}>
             <Grid
             container
             direction="row"
