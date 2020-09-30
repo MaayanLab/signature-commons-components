@@ -6,14 +6,15 @@ import Button from '@material-ui/core/Button'
 export const ExpandButton = (props) => {
     const {expanded, ButtonProps, IconProps} = props
     return(
-    <Tooltip title={'See more'}
-      placement="bottom">
-      <Button aria-label="Expand"
-        {...ButtonProps}
-      >
-        <span className={`mdi mdi-chevron-${expanded ? 'up': 'down'} mdi-24px`} {...IconProps}/>
-      </Button>
-    </Tooltip>
+      <Tooltip title={'See more'}
+        placement="bottom">
+        <Button aria-label="Expand"
+          aria-expanded={expanded}
+          {...ButtonProps}
+        >
+          <span className={`mdi mdi-chevron-${expanded ? 'up': 'down'} mdi-24px`} {...IconProps}/>
+        </Button>
+      </Tooltip>
   )}
 ExpandButton.propTypes = {
     expanded: PropTypes.bool,
