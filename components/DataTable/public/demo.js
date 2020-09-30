@@ -26,7 +26,7 @@ export default class Demo extends React.Component {
     const LeftComponents = (data) => ([ {
       component: (props) => (<ExpandButton {...props}/>),
       props: {
-        expanded: this.state.expanded,
+        expanded: this.state.expanded===data.id,
         ButtonProps: {
           onClick: () => this.handleClick(data.id),
           style:{ minWidth: 5,
