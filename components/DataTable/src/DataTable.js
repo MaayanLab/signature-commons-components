@@ -3,21 +3,11 @@ import PropTypes from 'prop-types'
 import Grid from '@material-ui/core/Grid'
 import { InfoCard } from './InfoCard';
 import { Typography } from '@material-ui/core';
-import { useTheme } from '@material-ui/styles'
 import { MuiThemeProvider } from '@material-ui/core'
 
 
 export const DataTableWrapper = (props) => {
-    const theme = useTheme()
-    if (theme!==null){
-        return(
-            <MuiThemeProvider theme={theme}>
-                <DataTable {...props}/>
-            </MuiThemeProvider>
-        )
-    }else{
-        return <DataTable {...props}/>
-    }
+    return <DataTable {...props}/>
 } 
 
 export const DataTable = (props) => {
